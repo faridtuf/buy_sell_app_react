@@ -212,7 +212,7 @@ body {
   width: 100%;
 }
 .dropdown:hover .dropdown-menu {
-  top: 34px;
+  top: 28px;
   opacity: 1;
   visibility: visible;
 }
@@ -371,6 +371,10 @@ body {
 .menu-border{
   border-bottom: 2px solid var(--mainOrange);
   background-color: var(--main-bg);
+}
+.menu-border .navbar{
+  padding-top: 0;
+  padding-bottom: 0;
 }
 .menu-large {
   position: static !important;
