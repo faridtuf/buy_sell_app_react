@@ -61,7 +61,6 @@ body{
 #page-header .buy-phone, #page-header .sell-phone {
   border: 2px solid var(--mainOrange);
   color: var(--mainOrange);
-  float: right;
   font-size: 18px;
   font-weight: 700;
   padding: 10px 50px;
@@ -496,5 +495,28 @@ body {
   }
   .col .mega-links li {
     margin: 0;
+  }
+}
+@media screen and (max-width: 576px) {
+  #page-header .logo {
+    height: 55px;
+    width: 160px;
+    object-fit: contain;
+  }
+  #page-header .buy-phone, #page-header .sell-phone{
+    padding: 10px 75px;
+  }
+  .menu-large{
+    margin-top: 10px;
+  }
+  .menu-border .navbar {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .megamenu{
+    padding: 5px 0px !important
+  }
+  .megamenu  .dropdown-item{
+    font-size: 12px;
   }
 }
