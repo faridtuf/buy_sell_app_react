@@ -98,6 +98,9 @@ export default class Sell extends Component{
                         </div>
                     </div>
                 </div>
+                <div className="container mt-5">
+                    <p className="text-center"><strong><a href="#" className="text-dark">See Top 100 Most Popular Cell Phone Trade Ins <i className="fa fa-angle-double-right"></i></a></strong></p>
+                </div>
             </div>
         )
         
