@@ -5,7 +5,11 @@
   --mainDark:#232528;
   --mainYellow:#ffa400;
   --mainOrange:#ec5e3e;
-  --main-bg:#e9e9e9
+  --main-bg:#e9e9e9;
+  --mainBlack:#000000
+}
+a{
+  text-decoration: none;
 }
 @font-face {
   font-family: Poppins-Bold;
@@ -27,6 +31,7 @@ body{
   font-family: Poppins-Light !important;
   background:var(--mainWhite) !important;
   color: var(--mainDark) !important;
+  overflow-x: hidden;
 }
 .text-title{
   font-family: "Oswald",sans-serif !important;
@@ -96,7 +101,7 @@ body{
 }
 
 .jumbotron h1 {
-  color: #000;
+  color: var(--mainBlack);
   font-family: Oswald,sans-serif;
   font-size: 52px;
   margin-top: 50px;
@@ -379,7 +384,7 @@ body {
   position: static !important;
 }
 .menu-large .nav-link{
-  color: #000000 !important;
+  color: var(--mainBlack) !important;
   text-transform: uppercase;
 }
 .menu-large > .nav-link:hover{
@@ -410,6 +415,116 @@ body {
 .megamenu .dropdown-item:visited{
   background-color: var(--mainOrange);
   color: var(--mainWhite) !important;
+}
+.banner-left{
+  background-color: var(--main-bg);
+  height: 630px;
+}
+.banner-right{
+  background-color: var(--mainOrange);
+  height: 630px;
+}
+.banner-right .phones{
+  margin-left: -493px;
+  margin-top: -653px;
+  position: relative;
+  top: 653px;
+  left: 250px;
+}
+.page-carousel-search{
+  position: relative;
+}
+.foreground{
+  position: absolute;
+  top: 100px;
+  width: 100%;
+}
+.foreground .card{
+  background-color: var(--mainWhite);
+}
+.foreground .search {
+  position: relative;
+  box-shadow: 0 0 40px rgba(51, 51, 51, .1)
+}
+
+.foreground .search input {
+  height: 40px;
+  text-indent: 0px;
+  border: 2px solid #d6d4d4
+}
+
+.foreground .search input:focus {
+  box-shadow: none;
+  border: 2px solid var(--mainOrange)
+}
+
+.foreground .search .fa-search {
+  position: absolute;
+  top: 20px;
+  left: 16px
+}
+
+.foreground .search .btn-search {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 40px;
+  width: 110px;
+  background: var(--mainOrange);
+  color: var(--mainWhite);
+  border-radius: 0;
+}
+.foreground .badges h6{
+  font-weight: bold;
+  margin-bottom: 0;
+}
+.foreground .badges a{
+  background-color: var(--main-bg);
+  color: var(--mainBlack);
+  text-decoration: none;
+}
+.media-object{
+  margin-top: 1rem;
+}
+.media-object img{
+  width: 25px;
+}
+.media-object h5{
+  color: var(--mainOrange);
+}
+.sell-banner{
+  width: 90%;
+}
+.sell-banner .lead{
+  color: var(--mainOrange);
+  font-weight: bold;
+}
+.sell-banner .heading{
+  color: var(--mainBlack);
+  font-weight: bold;
+  font-family: cursive;
+}
+.sell-banner .heading span{
+  color: var(--mainOrange);
+}
+.buy-banner{
+  position: relative;
+  left: 250px;
+}
+.buy-banner .lead{
+  color: var(--mainYellow);
+}
+.buy-banner h2{
+  color: var(--mainWhite);
+  font-family: Poppins-SemiBold;
+}
+.buy-banner .btn-buy{
+  margin-top: 1rem;
+  background-color: transparent;
+  border-radius: 0;
+  border: 2px solid var(--mainWhite);
+  color: var(--mainWhite);
+  padding: .5rem 2rem;
 }
 /* MEDIA QUERY */
 @media screen and (max-width: 970px) {
@@ -504,7 +619,7 @@ body {
     object-fit: contain;
   }
   #page-header .buy-phone, #page-header .sell-phone{
-    padding: 10px 75px;
+    padding: 5px 50px;
   }
   .menu-large{
     margin-top: 10px;
@@ -518,5 +633,75 @@ body {
   }
   .megamenu  .dropdown-item{
     font-size: 12px;
+  }
+  .foreground{
+    top: 30px;
+  }
+  .banner-right .phones {
+    margin-left: 0;
+    margin-top: 0px;
+    top: -685px;
+    left: 220px;
+    width: 45%;
+    position: relative;
+    z-index: 1;
+  }
+  .sell-banner .heading{
+    font-size: 2rem;
+  }
+  .foreground .card{
+    margin-top: 3rem;
+  }
+  .sell-banner{
+    width: 100%;
+  }
+  .sell-banner .rosette {
+    position: absolute;
+    top: -18px;
+  }
+  .sell-banner h4,
+  .sell-banner .rosette-mobile h4{
+    width: 170px;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    margin-top: 10px;
+    color: var(--mainOrange);
+  }
+  .sell-banner h4{
+    font-size: 2rem;
+    color: var(--mainBlack);
+  }
+  .foreground .search{
+    margin-top: 2rem;
+  }
+  .foreground .search .btn-search{
+    position: relative;
+    width: 100%;
+    top: 5px;
+  }
+  .banner-left{
+    height: 850px;
+  }
+  .buy-banner{
+    left: 0;
+    top: 5rem;
+  }
+  .banner-right{
+    height: 430px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .banner-right .phones {
+    left: 180px;
+    top: -680px;
+  }
+  .banner-left{
+    height: 920px;
+  }
+  .buy-banner {
+    left: 20px;
+  }
+  .buy-banner h2{
+    font-size:2.3rem
   }
 }
