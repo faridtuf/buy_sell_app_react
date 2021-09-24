@@ -29,101 +29,103 @@ export default class Navbar extends Component{
                         </div>
                     </div>
                 </div>
-                <div className="container">
-                    <nav className="navbar navbar-expand-lg navbar-light bg-transparent">
-                        <div className="container-fluid">
-                            <span className="navbar-brand">SELL YOUR TECH:</span>
-                            <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                                    aria-expanded="false" aria-label="Toggle navigation">
-                                <span className="navbar-toggler-icon"></span>
-                            </button>
-                            <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                                <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                                    <li className="nav-item dropdown menu-large">
-                                        <a className="nav-link dropdown-toggle" href="#" id="iphones"
-                                           role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                            Iphones
-                                        </a>
-                                        <ul className="dropdown-menu megamenu" aria-labelledby="iphones">
-                                            <div className="row">
-                                                <h6 className="col-md-12">Cell Iphones</h6>
-                                            </div>
-                                            <div className="row">
-                                                <div className="col-md-3">
-                                                    <div className="dropdown-item">Sell iPhone 13 Pro Max</div>
-                                                    <div className="dropdown-item">Sell iPhone 12 Pro Max</div>
-                                                    <div className="dropdown-item">Sell iPhone 12 Pro</div>
-                                                    <div className="dropdown-item">Sell iPhone 13</div>
+                <div className="menu-border">
+                    <div className="container">
+                        <nav className="navbar navbar-expand-lg navbar-light bg-transparent">
+                            <div className="container-fluid">
+                                <span>SELL YOUR TECH:</span>
+                                <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                        aria-expanded="false" aria-label="Toggle navigation">
+                                    <span className="navbar-toggler-icon"></span>
+                                </button>
+                                <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                                        <li className="nav-item dropdown menu-large">
+                                            <a className="nav-link dropdown-toggle" href="#" id="iphones"
+                                               role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Iphones
+                                            </a>
+                                            <ul className="dropdown-menu megamenu" aria-labelledby="iphones">
+                                                <div className="row">
+                                                    <h6 className="col-md-12">Cell Iphones</h6>
                                                 </div>
-                                                <div className="col-md-3">
-                                                    <div className="dropdown-item">Sell iPhone 13 Pro Max</div>
-                                                    <div className="dropdown-item">Sell iPhone 12 Pro Max</div>
-                                                    <div className="dropdown-item">Sell iPhone 12 Pro</div>
-                                                    <div className="dropdown-item">Sell iPhone 13</div>
+                                                <div className="row">
+                                                    <div className="col-md-3">
+                                                        <div className="dropdown-item">Sell iPhone 13 Pro Max</div>
+                                                        <div className="dropdown-item">Sell iPhone 12 Pro Max</div>
+                                                        <div className="dropdown-item">Sell iPhone 12 Pro</div>
+                                                        <div className="dropdown-item">Sell iPhone 13</div>
+                                                    </div>
+                                                    <div className="col-md-3">
+                                                        <div className="dropdown-item">Sell iPhone 13 Pro Max</div>
+                                                        <div className="dropdown-item">Sell iPhone 12 Pro Max</div>
+                                                        <div className="dropdown-item">Sell iPhone 12 Pro</div>
+                                                        <div className="dropdown-item">Sell iPhone 13</div>
+                                                    </div>
+                                                    <div className="col-md-3">
+                                                        <div className="dropdown-item">Sell iPhone 13 Pro Max</div>
+                                                        <div className="dropdown-item">Sell iPhone 12 Pro Max</div>
+                                                        <div className="dropdown-item">Sell iPhone 12 Pro</div>
+                                                        <div className="dropdown-item">Sell iPhone 13</div>
+                                                    </div>
+                                                    <div className="col-md-3">
+                                                        <div className="dropdown-item">Sell iPhone 13 Pro Max</div>
+                                                        <div className="dropdown-item">Sell iPhone 12 Pro Max</div>
+                                                        <div className="dropdown-item">Sell iPhone 12 Pro</div>
+                                                        <div className="dropdown-item">Sell iPhone 13</div>
+                                                    </div>
                                                 </div>
-                                                <div className="col-md-3">
-                                                    <div className="dropdown-item">Sell iPhone 13 Pro Max</div>
-                                                    <div className="dropdown-item">Sell iPhone 12 Pro Max</div>
-                                                    <div className="dropdown-item">Sell iPhone 12 Pro</div>
-                                                    <div className="dropdown-item">Sell iPhone 13</div>
+                                                <div className="row">
+                                                    <a className="text-black" href="#">See All Iphones >></a>
                                                 </div>
-                                                <div className="col-md-3">
-                                                    <div className="dropdown-item">Sell iPhone 13 Pro Max</div>
-                                                    <div className="dropdown-item">Sell iPhone 12 Pro Max</div>
-                                                    <div className="dropdown-item">Sell iPhone 12 Pro</div>
-                                                    <div className="dropdown-item">Sell iPhone 13</div>
+                                            </ul>
+                                        </li>
+                                        <li className="nav-item dropdown menu-large">
+                                            <a className="nav-link dropdown-toggle" href="#" id="samsung"
+                                               role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Samsung phones
+                                            </a>
+                                            <ul className="dropdown-menu megamenu" aria-labelledby="samsung">
+                                                <div className="row">
+                                                    <h6 className="col-md-12">Cell Samsung</h6>
                                                 </div>
-                                            </div>
-                                            <div className="row">
-                                                <a className="text-black" href="#">See All Iphones >></a>
-                                            </div>
-                                        </ul>
-                                    </li>
-                                    <li className="nav-item dropdown menu-large">
-                                        <a className="nav-link dropdown-toggle" href="#" id="samsung"
-                                           role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                            Samsung phones
-                                        </a>
-                                        <ul className="dropdown-menu megamenu" aria-labelledby="samsung">
-                                            <div className="row">
-                                                <h6 className="col-md-12">Cell Samsung</h6>
-                                            </div>
-                                            <div className="row">
-                                                <div className="col-md-3">
-                                                    <div className="dropdown-item">Sell iPhone 13 Pro Max</div>
-                                                    <div className="dropdown-item">Sell iPhone 12 Pro Max</div>
-                                                    <div className="dropdown-item">Sell iPhone 12 Pro</div>
-                                                    <div className="dropdown-item">Sell iPhone 13</div>
+                                                <div className="row">
+                                                    <div className="col-md-3">
+                                                        <div className="dropdown-item">Sell iPhone 13 Pro Max</div>
+                                                        <div className="dropdown-item">Sell iPhone 12 Pro Max</div>
+                                                        <div className="dropdown-item">Sell iPhone 12 Pro</div>
+                                                        <div className="dropdown-item">Sell iPhone 13</div>
+                                                    </div>
+                                                    <div className="col-md-3">
+                                                        <div className="dropdown-item">Sell iPhone 13 Pro Max</div>
+                                                        <div className="dropdown-item">Sell iPhone 12 Pro Max</div>
+                                                        <div className="dropdown-item">Sell iPhone 12 Pro</div>
+                                                        <div className="dropdown-item">Sell iPhone 13</div>
+                                                    </div>
+                                                    <div className="col-md-3">
+                                                        <div className="dropdown-item">Sell iPhone 13 Pro Max</div>
+                                                        <div className="dropdown-item">Sell iPhone 12 Pro Max</div>
+                                                        <div className="dropdown-item">Sell iPhone 12 Pro</div>
+                                                        <div className="dropdown-item">Sell iPhone 13</div>
+                                                    </div>
+                                                    <div className="col-md-3">
+                                                        <div className="dropdown-item">Sell iPhone 13 Pro Max</div>
+                                                        <div className="dropdown-item">Sell iPhone 12 Pro Max</div>
+                                                        <div className="dropdown-item">Sell iPhone 12 Pro</div>
+                                                        <div className="dropdown-item">Sell iPhone 13</div>
+                                                    </div>
                                                 </div>
-                                                <div className="col-md-3">
-                                                    <div className="dropdown-item">Sell iPhone 13 Pro Max</div>
-                                                    <div className="dropdown-item">Sell iPhone 12 Pro Max</div>
-                                                    <div className="dropdown-item">Sell iPhone 12 Pro</div>
-                                                    <div className="dropdown-item">Sell iPhone 13</div>
+                                                <div className="row">
+                                                    <a className="text-black" href="#">See All Samsung >></a>
                                                 </div>
-                                                <div className="col-md-3">
-                                                    <div className="dropdown-item">Sell iPhone 13 Pro Max</div>
-                                                    <div className="dropdown-item">Sell iPhone 12 Pro Max</div>
-                                                    <div className="dropdown-item">Sell iPhone 12 Pro</div>
-                                                    <div className="dropdown-item">Sell iPhone 13</div>
-                                                </div>
-                                                <div className="col-md-3">
-                                                    <div className="dropdown-item">Sell iPhone 13 Pro Max</div>
-                                                    <div className="dropdown-item">Sell iPhone 12 Pro Max</div>
-                                                    <div className="dropdown-item">Sell iPhone 12 Pro</div>
-                                                    <div className="dropdown-item">Sell iPhone 13</div>
-                                                </div>
-                                            </div>
-                                            <div className="row">
-                                                <a className="text-black" href="#">See All Samsung >></a>
-                                            </div>
-                                        </ul>
-                                    </li>
-                                </ul>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
-                        </div>
-                    </nav>
+                        </nav>
+                    </div>
                 </div>
             </div>
         )
