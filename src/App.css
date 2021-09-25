@@ -543,6 +543,14 @@ body {
 .upgrade h4 span{
   color: var(--mainOrange);
 }
+.upgrade h3{
+  color: var(--mainGray);
+  font-style: italic;
+}
+.upgrade p{
+  font-family: Poppins-Regular;
+  color: var(--mainGray);
+}
 .upgrade-mobile img{
   margin-top: 1rem;
   width: 100%;
@@ -752,6 +760,27 @@ body {
   padding-left: 20px;
   margin-top: 15px;
   margin-bottom: 30px;
+}
+.sell-phones{
+  text-align: center;
+  border-top: 1px solid var(--mainOrange);
+  border-bottom: 1px solid var(--mainOrange);
+  padding: 10px 0;
+}
+.sell-phones h3{
+  margin-bottom: 0;
+  color: var(--mainOrange);
+  font-family: Poppins-SemiBold;
+}
+.selling-info h4{
+  color: var(--mainOrange);
+  font-family: Poppins-SemiBold;
+}
+.selling-info ol li,
+.selling-info p{
+  color: var(--mainGray);
+  font-size: .8rem;
+  margin-bottom: .5rem;
 }
 /* MEDIA QUERY */
 @media screen and (max-width: 1200px) {

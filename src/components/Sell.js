@@ -551,6 +551,43 @@ export default class Sell extends Component{
                         </div>
                     </div>
                 </div>
+                <div className="container mt-3">
+                    <div className="sell-phones">
+                        <h3>Sell Phone</h3>
+                    </div>
+                    <div className="upgrade">
+                        <h2><span>SellCell is the Fast and Easy Way to Sell Phones Online</span></h2>
+                        <h3>"SellCell is like the Kayak of phone selling sites"</h3>
+                        <p>(CentsandOrder)</p>
+                    </div>
+                    <div className="row">
+                        <div className="col-lg-6">
+                           <div className="selling-info">
+                               <h4><span>Where Can I Sell My Cell Phone?</span></h4>
+                               <p>Fortunately you've come to the right place! SellCell is the best place to sell phones, tablets and other mobile devices. We compare prices from all the leading cell phone buyers in the US to get you the most cash and also save you time and hassle. If you want to sell a phone or tablet then SellCell is the only site you need!</p>
+                                <h4>How Do I Sell My Phone?</h4>
+                               <p>It's so easy to sell your phone with SellCell. Sell phone for cash today in 4 simple steps:</p>
+                               <ol>
+                                   <li>Enter the make and model of the cell phone you want to sell in the search box above</li>
+                                   <li>SellCell instantly compares prices from all the leading cell phone buyback companies to get you the most cash for your old phone. Simply select the best deal</li>
+                               </ol>
+                               <h4>Who Buys Used Cell Phones?</h4>
+                               <p>People frequently ask us what happens to their device when they sell a smartphone or tablet through the SellCell platform. The companies featured on SellCell specialize in the buying, selling and recycling of used cell phones, tablets and other mobile devices. There is a big and growing demand globally for used cell phones. The latest handsets continue to get better and better but so does the cost with the prices for new phones increasing all the time. There are a lot of consumers and businesses that prefer to buy refurbished, pre-owned phones for a better deal. The cell phone buyback companies on our site specialize in buying used phones that people no longer want (such as when they upgrade) and they then generally refurbish the devices and sell them on again to customers looking for quality, pre-owned phones. When you trade in your old phone on SellCell the majority of devices will be re-sold to other customers domestically in America but they also get re-sold internationally to other countries all around the world</p>
+                           </div>
+                        </div>
+                        <div className="col-lg-6">
+                            <div className="selling-info">
+                                <h4><span>Why Wouldn't I Just Sell My Old Phone to My Carrier When I Upgrade?</span></h4>
+                                <p>We know how it goes. You've decided to take the plunge and buy that shiny new latest flagship smartphone you've been dreaming about. Hey these things aren't cheap so you're obviously doing the sensible thing of selling your old phone to help pay for the upgrade. You're just going through the process of buying your new phone when your network carrier offers you a trade in price for your old phone. It's so easy, they'll discount your new phone by the trade in price so you have less to pay upfront. It's so tempting and the process is nice and easy. BUT, be warned, this might come at a cost. It's nice and convenient but generally the value you get from the network carriers to sell your old phone isn't the best. You can generally get a lot more cash for your old phone by shopping around and this doesn't have to be a hassle as you can simply use SellCell! SellCell compares prices from all the top cell phone buyers in the US in seconds to get you the best deal. By doing this you can generally get a lot more money for your old phone than the trade in prices offered by the carriers so it is worth doing</p>
+                                <h4>Who Buys Used Cell Phones?</h4>
+                                <p>People frequently ask us what happens to their device when they sell a smartphone or tablet through the SellCell platform. The companies featured on SellCell specialize in the buying, selling and recycling of used cell phones, tablets and other mobile devices. There is a big and growing demand globally for used cell phones. The latest handsets continue to get better and better but so does the cost with the prices for new phones increasing all the time. There are a lot of consumers and businesses that prefer to buy refurbished, pre-owned phones for a better deal. The cell phone buyback companies on our site specialize in buying used phones that people no longer want (such as when they upgrade) and they then generally refurbish the devices and sell them on again to customers looking for quality, pre-owned phones. When you trade in your old phone on SellCell the majority of devices will be re-sold to other customers domestically in America but they also get re-sold internationally to other countries all around the world</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="sell-phones">
+                        <h3>SellCell - the Best Place to Sell Your Phone</h3>
+                    </div>
+                </div>
             </div>
         )
 
