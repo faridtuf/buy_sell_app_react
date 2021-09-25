@@ -4,6 +4,15 @@ import buy_banner from "../images/buy-banner.jpg"
 import phones from "../images/sell-phone.png"
 import searchIcon from "../images/magnifying-glass.png"
 import iPhone13 from "../images/iphone-13.jpg"
+import product1 from "../images/iphone-11.jpg"
+import product2 from "../images/iphone-11-pro-max.jpg"
+import product3 from "../images/iphone-12-pro-max.jpg"
+import brand1 from "../images/apple.png"
+import brand2 from "../images/samsung.png"
+import brand3 from "../images/lg.png"
+import brand4 from "../images/oneplus.png"
+import brand5 from "../images/motorola.png"
+import brand6 from "../images/google.png"
 export default class Sell extends Component{
     render(){
         return(
@@ -101,8 +110,220 @@ export default class Sell extends Component{
                 <div className="container mt-5">
                     <p className="text-center"><strong><a href="#" className="text-dark">See Top 100 Most Popular Cell Phone Trade Ins <i className="fa fa-angle-double-right"></i></a></strong></p>
                 </div>
+                <div className="container mt-2">
+                    <div className="border">
+                        <h1 className="popular-trade">MOST POPULAR TRADE INS</h1>
+                        <div className="row">
+                            <div className="col-xl-4 col-md-6 mb-2">
+                                <div className="row product">
+                                    <div className="col-6 col-md-5">
+                                        <img src={product1} alt="" className="product-image"/>
+                                    </div>
+                                    <div className="col-6 col-md-7 product-details">
+                                        <h3>Iphone 11</h3>
+                                        <h6>Top Price</h6>
+                                        <h2>$415.00</h2>
+                                        <h5>Compare 35 prices</h5>
+                                        <a href="#" className="sell-now">Sell Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-xl-4 col-md-6 mb-2">
+                                <div className="row product">
+                                    <div className="col-6 col-md-5">
+                                        <img src={product2} alt="" className="product-image"/>
+                                    </div>
+                                    <div className="col-6 col-md-7 product-details">
+                                        <h3>Iphone 12</h3>
+                                        <h6>Top Price</h6>
+                                        <h2>$415.00</h2>
+                                        <h5>Compare 35 prices</h5>
+                                        <a href="#" className="sell-now">Sell Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-xl-4 col-md-6 mb-2">
+                                <div className="row product">
+                                    <div className="col-6 col-md-5">
+                                        <img src={product3} alt="" className="product-image"/>
+                                    </div>
+                                    <div className="col-6 col-md-7 product-details">
+                                        <h3>Iphone 12 Pro</h3>
+                                        <h6>Top Price</h6>
+                                        <h2>$415.00</h2>
+                                        <h5>Compare 35 prices</h5>
+                                        <a href="#" className="sell-now">Sell Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-xl-4 col-md-6 mb-2">
+                                <div className="row product">
+                                    <div className="col-6 col-md-5">
+                                        <img src={product3} alt="" className="product-image"/>
+                                    </div>
+                                    <div className="col-6 col-md-7 product-details">
+                                        <h3>Iphone 10</h3>
+                                        <h6>Top Price</h6>
+                                        <h2>$415.00</h2>
+                                        <h5>Compare 35 prices</h5>
+                                        <a href="#" className="sell-now">Sell Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-xl-4 col-md-6 mb-2">
+                                <div className="row product">
+                                    <div className="col-6 col-md-5">
+                                        <img src={product2} alt="" className="product-image"/>
+                                    </div>
+                                    <div className="col-6 col-md-7 product-details">
+                                        <h3>Iphone 11</h3>
+                                        <h6>Top Price</h6>
+                                        <h2>$415.00</h2>
+                                        <h5>Compare 35 prices</h5>
+                                        <a href="#" className="sell-now">Sell Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-xl-4 col-md-6 mb-2">
+                                <div className="row product">
+                                    <div className="col-6 col-md-5">
+                                        <img src={product1} alt="" className="product-image"/>
+                                    </div>
+                                    <div className="col-6 col-md-7 product-details">
+                                        <h3>Iphone 11 Pro</h3>
+                                        <h6>Top Price</h6>
+                                        <h2>$415.00</h2>
+                                        <h5>Compare 35 prices</h5>
+                                        <a href="#" className="sell-now">Sell Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-xl-4 col-md-6 mb-2">
+                                <div className="row product">
+                                    <div className="col-6 col-md-5">
+                                        <img src={product3} alt="" className="product-image"/>
+                                    </div>
+                                    <div className="col-6 col-md-7 product-details">
+                                        <h3>Iphone 8 Pro</h3>
+                                        <h6>Top Price</h6>
+                                        <h2>$415.00</h2>
+                                        <h5>Compare 35 prices</h5>
+                                        <a href="#" className="sell-now">Sell Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-xl-4 col-md-6 mb-2">
+                                <div className="row product">
+                                    <div className="col-6 col-md-5">
+                                        <img src={product2} alt="" className="product-image"/>
+                                    </div>
+                                    <div className="col-6 col-md-7 product-details">
+                                        <h3>Iphone 9 Pro</h3>
+                                        <h6>Top Price</h6>
+                                        <h2>$415.00</h2>
+                                        <h5>Compare 35 prices</h5>
+                                        <a href="#" className="sell-now">Sell Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-xl-4 col-md-6 mb-2">
+                                <div className="row product">
+                                    <div className="col-6 col-md-5">
+                                        <img src={product1} alt="" className="product-image"/>
+                                    </div>
+                                    <div className="col-6 col-md-7 product-details">
+                                        <h3>Iphone 8</h3>
+                                        <h6>Top Price</h6>
+                                        <h2>$415.00</h2>
+                                        <h5>Compare 35 prices</h5>
+                                        <a href="#" className="sell-now">Sell Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="container mt-5">
+                    <h3 className="brand-search">SEARCH BY BRAND</h3>
+                </div>
+                <div className="container">
+                    <div className="row">
+                        <div className="col-xl-3 col-md-6 mb-2">
+                            <div className="border h-100">
+                                <div className="perfect-center brand-height">
+                                    <a href="#">
+                                        <img src={brand1} alt="" className="brand-image"/>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-xl-3 col-md-6 mb-2">
+                            <div className="border h-100">
+                                <div className="perfect-center brand-height">
+                                    <a href="#">
+                                        <img src={brand2} alt="" className="brand-image"/>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-xl-3 col-md-6 mb-2">
+                            <div className="border h-100">
+                                <div className="perfect-center brand-height">
+                                    <a href="#">
+                                        <img src={brand3} alt="" className="brand-image"/>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-xl-3 col-md-6 mb-2">
+                            <div className="border h-100">
+                                <div className="perfect-center brand-height">
+                                    <a href="#">
+                                        <img src={brand4} alt="" className="brand-image"/>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-xl-3 col-md-6 mb-2">
+                            <div className="border h-100">
+                                <div className="perfect-center brand-height">
+                                    <a href="#">
+                                        <img src={brand5} alt="" className="brand-image"/>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-xl-3 col-md-6 mb-2">
+                            <div className="border h-100">
+                                <div className="perfect-center brand-height">
+                                    <a href="#">
+                                        <img src={brand6} alt="" className="brand-image"/>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-xl-3 col-md-6 mb-2">
+                            <div className="border h-100">
+                                <div className="perfect-center brand-height">
+                                    <a href="#">
+                                        <img src={brand1} alt="" className="brand-image"/>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-xl-3 col-md-6 mb-2">
+                            <div className="border h-100">
+                                <div className="perfect-center brand-height">
+                                    <a href="#" className="all-brands">
+                                        <h3>View All Brands</h3>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         )
-        
+
     }
 }
