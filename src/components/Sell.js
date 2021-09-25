@@ -26,6 +26,7 @@ import step2 from "../images/choose-the-best-deal.png"
 import step3 from "../images/get-your-cash.png"
 import step4 from "../images/post-your-mobile-tablet.png"
 import guaranteed from "../images/best-price-guaranteed.png"
+import testimonial from "../images/buy-banner.jpg"
 export default class Sell extends Component{
     render(){
         return(
@@ -476,6 +477,74 @@ export default class Sell extends Component{
                                 <div className="col-md-4">
                                     <div className="price-guaranteed">
                                         <img src={guaranteed} alt=""/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="container mt-3">
+                    <div className="row">
+                        <div className="col-md-4">
+                            <div className="featured">
+                                <h3>As featured in...</h3>
+                                <div className="row">
+                                    <div className="col-md-6 mb-2">
+                                        <img src={company1} alt=""/>
+                                    </div>
+                                    <div className="col-md-6 mb-2">
+                                        <img src={company2} alt=""/>
+                                    </div>
+                                    <div className="col-md-6 mb-2">
+                                        <img src={company3} alt=""/>
+                                    </div>
+                                    <div className="col-md-6 mb-2">
+                                        <img src={company4} alt=""/>
+                                    </div>
+                                    <div className="col-md-6 mb-2">
+                                        <img src={company5} alt=""/>
+                                    </div>
+                                    <div className="col-md-6 mb-2">
+                                        <img src={company6} alt=""/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-md-8">
+                            <div className="testimonial">
+                                <h3>What our customers say...</h3>
+                                <div className="row">
+                                    <div className="col-md-6 quote-block">
+                                        <div className="avatar-image">
+                                            <img className="rounded-circle" src={testimonial} width="108" height="108" alt="Thomas Stepien"/>
+                                        </div>
+
+                                        <div className="comment">
+                                            <blockquote>
+                                                <p>SellCell.com found me an awesome deal for my old cell phone.
+                                                    THANKS GUYS!!!<i></i></p>
+                                            </blockquote>
+                                        </div>
+
+                                        <div className="name">
+                                            <p>Thomas Stepien, California </p>
+                                        </div>
+                                    </div>
+                                    <div className="col-md-6 quote-block">
+                                        <div className="avatar-image">
+                                            <img className="rounded-circle" src={testimonial} width="108" height="108" alt="Thomas Stepien"/>
+                                        </div>
+
+                                        <div className="comment">
+                                            <blockquote>
+                                                <p>SellCell.com found me an awesome deal for my old cell phone.
+                                                    THANKS GUYS!!!<i></i></p>
+                                            </blockquote>
+                                        </div>
+
+                                        <div className="name">
+                                            <p>Thomas Stepien, California </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

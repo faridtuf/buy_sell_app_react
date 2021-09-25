@@ -677,6 +677,82 @@ body {
   box-shadow: inset -1px 1px 1px #f3a483;
   font-family: Poppins-SemiBold;
 }
+.testimonial h3,
+.featured h3{
+  color: var(--mainOrange);
+  font-weight: bold;
+  font-family: Poppins-SemiBold;
+}
+.featured img{
+  width: 100%;
+  object-fit: contain;
+  height: 80px
+}
+.avatar-image {
+  text-align: center;
+  position: relative;
+  z-index: 1000;
+}
+.avatar-image img {
+  border: 4px solid #999;
+  box-shadow: 0 0 6px #bbb;
+  margin-top: -60px;
+  position: relative;
+  top: 60px;
+}
+.quote-block .comment {
+  background-color: #fff;
+  border: 1px solid #e7e7e7;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 15px;
+  width: 100%;
+  color: #999;
+  box-shadow: 0 0 2px #f4f4f4;
+  min-height: 150px;
+  position: relative;
+}
+.quote-block blockquote {
+  background: url(images/quote-left.png) no-repeat top left;
+  border-left: none;
+  margin: 0;
+  padding: 0;
+}
+.quote-block .comment p {
+  margin-top: 30px;
+}
+.quote-block blockquote p {
+  font-size: inherit;
+  font-weight: 400;
+  line-height: inherit;
+  padding-top: 35px;
+}
+.quote-block blockquote p i {
+  display: inline-block;
+  background: url(images/quote-right.png) no-repeat left center;
+  height: 15px;
+  width: 15px;
+  margin-left: 5px;
+}
+.quote-block .comment:after {
+  content: "";
+  display: block;
+  height: 12px;
+  width: 23px;
+  background: transparent url(images/speech-arrow.png) no-repeat center center;
+  position: absolute;
+  bottom: -12px;
+  left: 35px;
+}
+.quote-block .name {
+  font-weight: 700;
+  width: 100%;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  padding-left: 20px;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
 /* MEDIA QUERY */
 @media screen and (max-width: 1200px) {
   .buy-banner{
