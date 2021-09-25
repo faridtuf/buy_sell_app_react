@@ -21,6 +21,11 @@ import company4 from "../images/company4.png"
 import company5 from "../images/company5.png"
 import company6 from "../images/company6.png"
 import company7 from "../images/company7.png"
+import step1 from "../images/find-your-device.png"
+import step2 from "../images/choose-the-best-deal.png"
+import step3 from "../images/get-your-cash.png"
+import step4 from "../images/post-your-mobile-tablet.png"
+import guaranteed from "../images/best-price-guaranteed.png"
 export default class Sell extends Component{
     render(){
         return(
@@ -427,6 +432,50 @@ export default class Sell extends Component{
                                                 More <i className="fa fa-plus"></i>
                                             </a>
                                         </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="container mt-3">
+                    <div className="card">
+                        <div className="card-header step-heading">
+                            <h5>Sell Your Phone in 4 Simple Steps</h5>
+                        </div>
+                        <div className="card-body">
+                            <div className="row">
+                                <div className="col-md-8">
+                                    <div className="row">
+                                        <div className="col-md-3 perfect-center">
+                                            <div className="steps">
+                                                <img src={step1} alt="" className="step-image"/>
+                                                <p>1. Find Your Device</p>
+                                            </div>
+                                        </div>
+                                        <div className="col-md-3 perfect-center">
+                                            <div className="steps">
+                                                <img src={step2} alt="" className="step-image"/>
+                                                <p>2. Choose the Best Deal</p>
+                                            </div>
+                                        </div>
+                                        <div className="col-md-3 perfect-center">
+                                            <div className="steps">
+                                                <img src={step3} alt="" className="step-image"/>
+                                                <p>3. Ship Your Device</p>
+                                            </div>
+                                        </div>
+                                        <div className="col-md-3 perfect-center">
+                                            <div className="steps">
+                                                <img src={step4} alt="" className="step-image"/>
+                                                <p>4. Get Your Cash!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-md-4">
+                                    <div className="price-guaranteed">
+                                        <img src={guaranteed} alt=""/>
                                     </div>
                                 </div>
                             </div>
