@@ -27,6 +27,10 @@ import step3 from "../images/get-your-cash.png"
 import step4 from "../images/post-your-mobile-tablet.png"
 import guaranteed from "../images/best-price-guaranteed.png"
 import testimonial from "../images/buy-banner.jpg"
+import set1 from "../images/set-1.png"
+import set2 from "../images/set-2.png"
+import set3 from "../images/set-3.png"
+import set4 from "../images/set-4.png"
 export default class Sell extends Component{
     render(){
         return(
@@ -562,18 +566,18 @@ export default class Sell extends Component{
                     </div>
                     <div className="row">
                         <div className="col-lg-6">
-                           <div className="selling-info">
-                               <h4><span>Where Can I Sell My Cell Phone?</span></h4>
-                               <p>Fortunately you've come to the right place! SellCell is the best place to sell phones, tablets and other mobile devices. We compare prices from all the leading cell phone buyers in the US to get you the most cash and also save you time and hassle. If you want to sell a phone or tablet then SellCell is the only site you need!</p>
+                            <div className="selling-info">
+                                <h4><span>Where Can I Sell My Cell Phone?</span></h4>
+                                <p>Fortunately you've come to the right place! SellCell is the best place to sell phones, tablets and other mobile devices. We compare prices from all the leading cell phone buyers in the US to get you the most cash and also save you time and hassle. If you want to sell a phone or tablet then SellCell is the only site you need!</p>
                                 <h4>How Do I Sell My Phone?</h4>
-                               <p>It's so easy to sell your phone with SellCell. Sell phone for cash today in 4 simple steps:</p>
-                               <ol>
-                                   <li>Enter the make and model of the cell phone you want to sell in the search box above</li>
-                                   <li>SellCell instantly compares prices from all the leading cell phone buyback companies to get you the most cash for your old phone. Simply select the best deal</li>
-                               </ol>
-                               <h4>Who Buys Used Cell Phones?</h4>
-                               <p>People frequently ask us what happens to their device when they sell a smartphone or tablet through the SellCell platform. The companies featured on SellCell specialize in the buying, selling and recycling of used cell phones, tablets and other mobile devices. There is a big and growing demand globally for used cell phones. The latest handsets continue to get better and better but so does the cost with the prices for new phones increasing all the time. There are a lot of consumers and businesses that prefer to buy refurbished, pre-owned phones for a better deal. The cell phone buyback companies on our site specialize in buying used phones that people no longer want (such as when they upgrade) and they then generally refurbish the devices and sell them on again to customers looking for quality, pre-owned phones. When you trade in your old phone on SellCell the majority of devices will be re-sold to other customers domestically in America but they also get re-sold internationally to other countries all around the world</p>
-                           </div>
+                                <p>It's so easy to sell your phone with SellCell. Sell phone for cash today in 4 simple steps:</p>
+                                <ol>
+                                    <li>Enter the make and model of the cell phone you want to sell in the search box above</li>
+                                    <li>SellCell instantly compares prices from all the leading cell phone buyback companies to get you the most cash for your old phone. Simply select the best deal</li>
+                                </ol>
+                                <h4>Who Buys Used Cell Phones?</h4>
+                                <p>People frequently ask us what happens to their device when they sell a smartphone or tablet through the SellCell platform. The companies featured on SellCell specialize in the buying, selling and recycling of used cell phones, tablets and other mobile devices. There is a big and growing demand globally for used cell phones. The latest handsets continue to get better and better but so does the cost with the prices for new phones increasing all the time. There are a lot of consumers and businesses that prefer to buy refurbished, pre-owned phones for a better deal. The cell phone buyback companies on our site specialize in buying used phones that people no longer want (such as when they upgrade) and they then generally refurbish the devices and sell them on again to customers looking for quality, pre-owned phones. When you trade in your old phone on SellCell the majority of devices will be re-sold to other customers domestically in America but they also get re-sold internationally to other countries all around the world</p>
+                            </div>
                         </div>
                         <div className="col-lg-6">
                             <div className="selling-info">
@@ -586,6 +590,175 @@ export default class Sell extends Component{
                     </div>
                     <div className="sell-phones">
                         <h3>SellCell - the Best Place to Sell Your Phone</h3>
+                    </div>
+                    <div className="text-center my-4">
+                        <a href="#" className="sell-my-phone">Sell My Phone</a>
+                    </div>
+                </div>
+                <div className="mt-5 footer py-3">
+                    <div className="container">
+                        <div className="row d-none d-lg-flex">
+                            <div className="col-lg-3">
+                                <div className="footer-banner">
+                                    <img src={set1} alt="" className="footer-banner-image"/>
+                                </div>
+                            </div>
+                            <div className="col-lg-3">
+                                <div className="footer-banner">
+                                    <img src={set2} alt="" className="footer-banner-image"/>
+                                </div>
+                            </div>
+                            <div className="col-lg-3">
+                                <div className="footer-banner">
+                                    <img src={set3} alt="" className="footer-banner-image"/>
+                                </div>
+                            </div>
+                            <div className="col-lg-3">
+                                <div className="footer-banner">
+                                    <img src={set4} alt="" className="footer-banner-image"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="card footer-mt rounded-0">
+                            <div className="card-body">
+                                <div className="row">
+                                    <div className="col-md-4">
+                                        <div className="footer-links">
+                                            <h6>SELL YOUR TECH</h6>
+                                            <ul className="nav flex-column">
+                                                <li className="nav-item">
+                                                    <a className="nav-link" href="#"><i className="fa fa-angle-right me-1"></i>iPhone Trade In</a>
+                                                </li>
+                                                <li className="nav-item">
+                                                    <a className="nav-link" href="#"><i className="fa fa-angle-right me-1"></i>Samsung Trade In</a>
+                                                </li>
+                                                <li className="nav-item">
+                                                    <a className="nav-link" href="#"><i className="fa fa-angle-right me-1"></i>Cell Phone Trade In</a>
+                                                </li>
+                                                <li className="nav-item">
+                                                    <a className="nav-link" href="#"><i className="fa fa-angle-right me-1"></i>Sell iPad</a>
+                                                </li>
+                                                <li className="nav-item">
+                                                    <a className="nav-link" href="#"><i className="fa fa-angle-right me-1"></i>Sell Smartwatch</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div className="col-md-4">
+                                        <div className="footer-links">
+                                            <h6>About</h6>
+                                            <ul className="nav flex-column">
+                                                <li className="nav-item">
+                                                    <a className="nav-link" href="#"><i className="fa fa-angle-right me-1"></i>Home</a>
+                                                </li>
+                                                <li className="nav-item">
+                                                    <a className="nav-link" href="#"><i className="fa fa-angle-right me-1"></i>Why Use SellCell?</a>
+                                                </li>
+                                                <li className="nav-item">
+                                                    <a className="nav-link" href="#"><i className="fa fa-angle-right me-1"></i>Best Price Guarantee</a>
+                                                </li>
+                                                <li className="nav-item">
+                                                    <a className="nav-link" href="#"><i className="fa fa-angle-right me-1"></i>Our Partners</a>
+                                                </li>
+                                                <li className="nav-item">
+                                                    <a className="nav-link" href="#"><i className="fa fa-angle-right me-1"></i>Feature your site on SellCell</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div className="col-md-4">
+                                        <div className="footer-links">
+                                            <h6>FOLLOW US</h6>
+                                            <ul className="nav">
+                                                <li className="nav-item">
+                                                    <a className="nav-link footer-icons footer-twitter" href="#"><i className="fa fa-twitter"></i></a>
+                                                </li>
+                                                <li className="nav-item">
+                                                    <a className="nav-link footer-icons footer-facebook" href="#"><i className="fa fa-facebook-f"></i></a>
+                                                </li>
+                                                <li className="nav-item">
+                                                    <a className="nav-link footer-icons footer-youtube" href="#"><i className="fa fa-youtube"></i></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="row mt-5">
+                                    <div className="col-md-4">
+                                        <div className="footer-links">
+                                            <h6>POPULAR SEARCHES</h6>
+                                            <ul className="nav flex-column">
+                                                <li className="nav-item">
+                                                    <a className="nav-link" href="#"><i className="fa fa-angle-right me-1"></i>iPhone Trade In</a>
+                                                </li>
+                                                <li className="nav-item">
+                                                    <a className="nav-link" href="#"><i className="fa fa-angle-right me-1"></i>Samsung Trade In</a>
+                                                </li>
+                                                <li className="nav-item">
+                                                    <a className="nav-link" href="#"><i className="fa fa-angle-right me-1"></i>Cell Phone Trade In</a>
+                                                </li>
+                                                <li className="nav-item">
+                                                    <a className="nav-link" href="#"><i className="fa fa-angle-right me-1"></i>Sell iPad</a>
+                                                </li>
+                                                <li className="nav-item">
+                                                    <a className="nav-link" href="#"><i className="fa fa-angle-right me-1"></i>Sell Smartwatch</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div className="col-md-4">
+                                        <div className="footer-links">
+                                            <ul className="nav flex-column">
+                                                <li className="nav-item">
+                                                    <a className="nav-link" href="#"><i className="fa fa-angle-right me-1"></i>Home</a>
+                                                </li>
+                                                <li className="nav-item">
+                                                    <a className="nav-link" href="#"><i className="fa fa-angle-right me-1"></i>Why Use SellCell?</a>
+                                                </li>
+                                                <li className="nav-item">
+                                                    <a className="nav-link" href="#"><i className="fa fa-angle-right me-1"></i>Best Price Guarantee</a>
+                                                </li>
+                                                <li className="nav-item">
+                                                    <a className="nav-link" href="#"><i className="fa fa-angle-right me-1"></i>Our Partners</a>
+                                                </li>
+                                                <li className="nav-item">
+                                                    <a className="nav-link" href="#"><i className="fa fa-angle-right me-1"></i>Feature your site on SellCell</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div className="col-md-4">
+                                        <div className="footer-links">
+                                            <ul className="nav flex-column">
+                                                <li className="nav-item">
+                                                    <a className="nav-link" href="#"><i className="fa fa-angle-right me-1"></i>Home</a>
+                                                </li>
+                                                <li className="nav-item">
+                                                    <a className="nav-link" href="#"><i className="fa fa-angle-right me-1"></i>Why Use SellCell?</a>
+                                                </li>
+                                                <li className="nav-item">
+                                                    <a className="nav-link" href="#"><i className="fa fa-angle-right me-1"></i>Best Price Guarantee</a>
+                                                </li>
+                                                <li className="nav-item">
+                                                    <a className="nav-link" href="#"><i className="fa fa-angle-right me-1"></i>Our Partners</a>
+                                                </li>
+                                                <li className="nav-item">
+                                                    <a className="nav-link" href="#"><i className="fa fa-angle-right me-1"></i>Feature your site on SellCell</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="text-center mb-3">
+                                    <div className="compare-mobile">
+                                        <img src={logo}/>
+                                    </div>
+                                    <div className="upgrade mb-3">
+                                        <h6>The Best Place to Sell Your Phone!</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
