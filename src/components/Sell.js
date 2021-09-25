@@ -14,6 +14,13 @@ import brand4 from "../images/oneplus.png"
 import brand5 from "../images/motorola.png"
 import brand6 from "../images/google.png"
 import logo from '../logo.png'
+import company1 from "../images/company1.png"
+import company2 from "../images/company2.png"
+import company3 from "../images/company3.png"
+import company4 from "../images/company4.png"
+import company5 from "../images/company5.png"
+import company6 from "../images/company6.png"
+import company7 from "../images/company7.png"
 export default class Sell extends Component{
     render(){
         return(
@@ -323,17 +330,103 @@ export default class Sell extends Component{
                         </div>
                     </div>
                 </div>
-                <div className="container mt-5">
-                    <div className="row justify-content-center">
-                        <div className="col-lg-12">
-                            <div className="compare-price">
-                                <div className="text-center">
+                <div className="mt-5 compare-price py-3">
+                    <div className="container">
+                        <div className="row justify-content-center">
+                            <div className="col-lg-12">
+                                <div className="text-center mb-3">
                                     <div className="compare-mobile">
                                         <img src={logo}/>
                                     </div>
-                                    <div className="upgrade">
+                                    <div className="upgrade mb-3">
                                         <h4>compares prices from <span>40+ leading BuyBack</span></h4>
                                         <h4><span>Companies</span> to get you the best deal!</h4>
+                                    </div>
+                                </div>
+                                <div className="row">
+                                    <div className="col-6 col-md-4 col-lg-3 col-xl-2 mb-3">
+                                        <div className="perfect-center h-100">
+                                            <a href="#">
+                                                <img src={company1} alt="" className="company-logo"/>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div className="col-6 col-md-4 col-lg-3 col-xl-2 mb-3">
+                                        <div className="perfect-center h-100">
+                                            <a href="#">
+                                                <img src={company2} alt="" className="company-logo"/>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div className="col-6 col-md-4 col-lg-3 col-xl-2 mb-3">
+                                        <div className="perfect-center h-100">
+                                            <a href="#">
+                                                <img src={company3} alt="" className="company-logo"/>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div className="col-6 col-md-4 col-lg-3 col-xl-2 mb-3">
+                                        <div className="perfect-center h-100">
+                                            <a href="#">
+                                                <img src={company4} alt="" className="company-logo"/>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div className="col-6 col-md-4 col-lg-3 col-xl-2 mb-3">
+                                        <div className="perfect-center h-100">
+                                            <a href="#">
+                                                <img src={company5} alt="" className="company-logo"/>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div className="col-6 col-md-4 col-lg-3 col-xl-2 mb-3">
+                                        <div className="perfect-center h-100">
+                                            <a href="#">
+                                                <img src={company6} alt="" className="company-logo"/>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div className="col-6 col-md-4 col-lg-3 col-xl-2 mb-3">
+                                        <div className="perfect-center h-100">
+                                            <a href="#">
+                                                <img src={company5} alt="" className="company-logo"/>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div className="col-6 col-md-4 col-lg-3 col-xl-2 mb-3">
+                                        <div className="perfect-center h-100">
+                                            <a href="#">
+                                                <img src={company4} alt="" className="company-logo"/>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div className="col-6 col-md-4 col-lg-3 col-xl-2 mb-3">
+                                        <div className="perfect-center h-100">
+                                            <a href="#">
+                                                <img src={company7} alt="" className="company-logo"/>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div className="col-6 col-md-4 col-lg-3 col-xl-2 mb-3">
+                                        <div className="perfect-center h-100">
+                                            <a href="#">
+                                                <img src={company2} alt="" className="company-logo"/>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div className="col-6 col-md-4 col-lg-3 col-xl-2 mb-3">
+                                        <div className="perfect-center h-100">
+                                            <a href="#">
+                                                <img src={company1} alt="" className="company-logo"/>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div className="col-6 col-md-4 col-lg-3 col-xl-2 mb-3">
+                                        <div className="perfect-center h-100">
+                                            <a href="#" className="company-more-btn">
+                                                More <i className="fa fa-plus"></i>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
