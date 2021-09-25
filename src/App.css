@@ -536,7 +536,11 @@ body {
 .upgrade h2{
   font-size: 2rem;
 }
-.upgrade h2 span{
+.upgrade h4{
+  font-size: 1.5rem;
+}
+.upgrade h2 span,
+.upgrade h4 span{
   color: var(--mainOrange);
 }
 .upgrade-mobile img{
@@ -615,6 +619,14 @@ body {
 }
 .all-brands{
   color: var(--mainGray) !important;
+}
+.compare-price{
+  background-color: var(--main-bg);
+}
+.compare-mobile img{
+  width: 200px;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
 }
 /* MEDIA QUERY */
 @media screen and (max-width: 1200px) {

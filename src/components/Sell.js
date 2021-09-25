@@ -13,6 +13,7 @@ import brand3 from "../images/lg.png"
 import brand4 from "../images/oneplus.png"
 import brand5 from "../images/motorola.png"
 import brand6 from "../images/google.png"
+import logo from '../logo.png'
 export default class Sell extends Component{
     render(){
         return(
@@ -317,6 +318,23 @@ export default class Sell extends Component{
                                     <a href="#" className="all-brands">
                                         <h3>View All Brands</h3>
                                     </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="container mt-5">
+                    <div className="row justify-content-center">
+                        <div className="col-lg-12">
+                            <div className="compare-price">
+                                <div className="text-center">
+                                    <div className="compare-mobile">
+                                        <img src={logo}/>
+                                    </div>
+                                    <div className="upgrade">
+                                        <h4>compares prices from <span>40+ leading BuyBack</span></h4>
+                                        <h4><span>Companies</span> to get you the best deal!</h4>
+                                    </div>
                                 </div>
                             </div>
                         </div>
