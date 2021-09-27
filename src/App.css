@@ -774,8 +774,9 @@ body {
   border-bottom: 1px solid var(--mainOrange);
   padding: 10px 0;
 }
-.sell-phones h3{
-  margin-bottom: 0;
+.sell-phones h3,
+.sell-phones h5{
+  margin-bottom: .5rem;
   color: var(--mainOrange);
   font-family: Poppins-SemiBold;
 }
@@ -899,6 +900,42 @@ body {
   margin-top: 1rem;
   margin-bottom: 1rem;
   text-align: center;
+}
+.refurbished-devices p{
+  color: var(--mainGray);
+  font-size: .8rem;
+  text-align: center;
+  margin-top: .75rem;
+  margin-bottom: .5rem;
+}
+.buy-list .nav-link:hover,
+.buy-list .nav-link{
+  color: var(--mainGray);
+  text-decoration: underline;
+}
+.buy-list .nav-link .fa{
+  font-weight: bold;
+  font-size: 1.25rem;
+  margin-right: .25rem;
+}
+.refurbished-phones-icons h4{
+  color: var(--mainOrange);
+  font-family: Poppins-SemiBold;
+}
+.refurbished-phones-icons .fa{
+  background-color: var(--mainGreen);
+  color: var(--mainWhite);
+  height: 50px;
+  width: 50px;
+  vertical-align: middle;
+  line-height: 50px;
+  padding: 0px 10px;
+  border-radius: 50%;
+  font-size: 2rem;
+}
+.refurbished-phones-icons p{
+  color: var(--mainGray);
+  font-size: .8rem;
 }
   /*Footer*/
 .footer{
