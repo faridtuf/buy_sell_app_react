@@ -7,7 +7,11 @@
   --mainOrange:#ec5e3e;
   --main-bg:#fafafa;
   --mainBlack:#000000;
-  --mainGray:#666666
+  --mainGray:#666666;
+  --lightGray:#cccccc;
+  --mainBuy:#5bced3;
+  --mainGreen:#060;
+  --buyProduct:#484848;
 }
 a{
   text-decoration: none;
@@ -795,6 +799,108 @@ body {
   padding: 10px 20px;
   text-decoration: none;
 }
+/*Buy Page*/
+.buy-header{
+  background-color: var(--mainBuy);
+}
+.buy-header h1{
+  font-family: Poppins-SemiBold;
+  margin-bottom: 1.5rem;
+}
+.buy-header h4{
+  font-family: Poppins-Light;
+  color: var(--mainWhite);
+  margin-bottom: 1.5rem;
+}
+.has-search .form-control {
+  padding-left: 2.375rem;
+  border-radius: 0;
+}
+
+.has-search .form-control-feedback {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  width: 2.375rem;
+  height: 2.375rem;
+  line-height: 3rem;
+  text-align: center;
+  pointer-events: none;
+  color: #aaa;
+}
+.refurbished{
+  text-align: center;
+}
+.refurbished h4,
+.refurbished h1{
+  color: var(--mainGray);
+  font-family: Poppins-Light;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.refurbished-icons .fa{
+  font-size: 2rem;
+  color: var(--mainGreen);
+}
+.refurbished-icons p{
+  text-align: left;
+  color: var(--mainGreen);
+  font-family: Poppins-Light;
+  font-weight: bold;
+}
+.refurbished-phones:hover,
+.refurbished-phones{
+  height: 100%;
+  border: 1px solid var(--lightGray);
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: var(--buyProduct);
+  font-family: Poppins-Light;
+  font-weight: bold;
+  padding: .75rem;
+}
+.refurbished-phones p{
+  margin-bottom: 0;
+  margin-top: .5rem;
+  font-size: .8rem;
+}
+.refurbished-phones h5,
+.refurbished-phones h6
+{
+  font-family: Poppins-SemiBold;
+  font-size: .9rem;
+  margin-bottom: .25rem
+}
+.refurbished-phones img{
+  max-width: 200px;
+  max-height: 200px;
+  object-fit: cover;
+}
+.view-details,
+.view-details:hover{
+  display: block;
+  background-color: #469b30;
+  text-decoration: none;
+  color: var(--mainWhite);
+  padding: 5px;
+}
+.see-all-brands,
+.see-all-brands:hover{
+  color: var(--buyProduct);
+}
+.refurbished-tech a{
+  text-decoration: none;
+}
+.refurbished-tech h6{
+  font-weight: bold;
+  font-family: Poppins-SemiBold;
+  color: var(--mainGray);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+  /*Footer*/
 .footer{
   background-color: var(--main-bg);
 }
