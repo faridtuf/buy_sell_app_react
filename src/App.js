@@ -12,6 +12,7 @@ import Default from './components/Default';
 import Product from './components/Product';
 import Buy from './components/Buy';
 import Sell from './components/Sell';
+import brand from './components/brand';
 import Footer from './components/Footer';
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
                 <Route path="/cart" component={Cart}/>
                 <Route path="/buy" component={Buy}/>
                 <Route path="/sell" component={Sell}/>
+                <Route path="/brand" component={brand}/>
                 <Route  component={Default}/>
 
             </Switch>
