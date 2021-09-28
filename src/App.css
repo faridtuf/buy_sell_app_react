@@ -956,8 +956,53 @@ body {
   min-height: 150px;
   text-align: center;
 }
-.single-brand-height
-  /*Footer*/
+/*Product*/
+.product-title{
+  margin: 1rem 0;
+}
+.product-title h2{
+  color: var(--mainGray);
+  font-family: Poppins-SemiBold;
+}
+.product-title h2 span{
+  color: var(--mainOrange);
+}
+.product-details  .main-image{
+  width: 100%;
+}
+.product-details .product-sub-title{
+  color: var(--mainOrange);
+  font-family: Poppins-SemiBold;
+  margin-bottom: 1rem;
+}
+.product-details .network{
+  color: var(--mainGray);
+  font-weight: bold;
+  margin-bottom: 0;
+  font-size: 1.2rem;
+  font-family: Poppins-SemiBold;
+}
+.product-details .network-image{
+  width: 100%;
+  background-color: #f4f4f4;
+}
+[type=radio] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* IMAGE STYLES */
+[type=radio] + img {
+  cursor: pointer;
+}
+
+/* CHECKED STYLES */
+[type=radio]:checked + img {
+  outline: 2px solid #f00;
+}
+/*Footer*/
 .footer{
   background-color: var(--main-bg);
 }

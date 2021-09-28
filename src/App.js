@@ -26,6 +26,7 @@ function App() {
                 <Route path="/buy" component={Buy}/>
                 <Route path="/sell" component={Sell}/>
                 <Route path="/brand" component={brand}/>
+                <Route path="/product" component={Product}/>
                 <Route  component={Default}/>
 
             </Switch>
