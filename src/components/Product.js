@@ -6,6 +6,13 @@ import network3 from "../images/network3.png"
 import network4 from "../images/network4.png"
 import network5 from "../images/network5.png"
 import network6 from "../images/network6.png"
+import company1 from "../images/company1.png"
+import company2 from "../images/company2.png"
+import company3 from "../images/company3.png"
+import company4 from "../images/company4.png"
+import company5 from "../images/company5.png"
+import company6 from "../images/company6.png"
+import company7 from "../images/company7.png"
 import $ from "jquery";
 export default class Product extends Component{
     render(){
@@ -114,8 +121,47 @@ export default class Product extends Component{
                                     </div>
                                 </div>
                             </div>
+                            <div className="trade-price">
+                                <h3>Apple iPhone 13 Pro Max Trade In Prices</h3>
+                            </div>
                             <div id="filters1" className="desc">
-                                2 Cars Selected
+                               <div className="card">
+                                   <div className="card-body">
+                                       <div className="row">
+                                           <div className="col-lg-4">
+                                               <div className="product-rating">
+                                                   <img src={company1} alt=""/>
+                                                   <div className="d-flex justify-content-center rating">
+                                                       <i className="fa fa-star me-1"></i>
+                                                       <i className="fa fa-star me-1"></i>
+                                                       <i className="fa fa-star me-1"></i>
+                                                       <i className="fa fa-star me-1"></i>
+                                                       <i className="fa fa-star me-1"></i>
+                                                   </div>
+                                                   <div className="reviews">
+                                                       <p>1023 REVIEWS</p>
+                                                   </div>
+                                               </div>
+                                           </div>
+                                           <div className="col-lg-4">
+                                               <div className="product-rating">
+                                                   <div className="reviews free-shipping">
+                                                       <p>FREE SHIPPING? <i className="fa fa-check"></i></p>
+                                                       <p>FREE RETURNS? <i className="fa fa-check"></i></p>
+                                                       <p>PAYMENT SPEED: <span className="text-danger">3 DAYS</span></p>
+                                                       <p>PRICE VALID FOR: 3 DAYS</p>
+                                                   </div>
+                                               </div>
+                                           </div>
+                                           <div className="col-lg-4">
+                                               <div className="product-rating">
+                                                   <h3>$1050.00</h3>
+                                                   <a href="" className="get-paid">Get Paid <i className="fa fa-angle-double-right"></i></a>
+                                               </div>
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>
                             </div>
                             <div id="filters2" className="desc">
                                 3 Cars
