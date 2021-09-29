@@ -13,7 +13,8 @@ ReactDOM.render(
   document.getElementById('root')
 );
 $(document).ready(function() {
-    $("input[name$='network']").click(function() {
+    $("input[name$='network']").on('change click',function() {
+        $("input[name$='network']").not(this).prop('checked', false);
         var test = $(this).val();
 
         $("div.desc").hide();
