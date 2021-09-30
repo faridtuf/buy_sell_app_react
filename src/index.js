@@ -8,9 +8,9 @@ import $ from 'jquery'
 
 ReactDOM.render(
     <Router>
-      <App />
+        <App />
     </Router>,
-  document.getElementById('root')
+    document.getElementById('root')
 );
 $(document).ready(function() {
     $("input[name$='network']").on('change click',function() {
@@ -19,7 +19,27 @@ $(document).ready(function() {
 
         $("div.desc").hide();
         $("#filters" + test).show();
+        $(".available_networks").show();
+        $('#find_network').on('change',function (){
+            $('.gbp').hide()
+            $('.price').show()
+        })
     });
+
+    $('.quantity').on('click', '.plus', function(e) {
+        let input = $('.qty');
+        let val = parseInt(input.val());
+        input.val( val+1 ).change();
+    });
+
+    $('.quantity').on('click', '.minus',
+        function(e) {
+            let input =$('.qty');
+            var val = parseInt(input.val());
+            if (val > 1) {
+                input.val( val-1 ).change();
+            }
+        });
 });
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
