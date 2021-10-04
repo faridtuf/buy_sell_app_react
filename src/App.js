@@ -10,6 +10,7 @@ import Details from './components/Details';
 import Cart from './components/Cart';
 import Default from './components/Default';
 import Product from './components/Product';
+import BuyProduct from './components/BuyProduct';
 import Buy from './components/Buy';
 import Sell from './components/Sell';
 import brand from './components/brand';
@@ -27,6 +28,7 @@ function App() {
                 <Route path="/sell" component={Sell}/>
                 <Route path="/brand" component={brand}/>
                 <Route path="/product" component={Product}/>
+                <Route path="/BuyProduct" component={BuyProduct}/>
                 <Route  component={Default}/>
 
             </Switch>

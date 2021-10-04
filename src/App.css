@@ -1104,6 +1104,67 @@ input.qtyplus,input.qtyminus {
 .sell-phone-now{
   padding: 5px 50px !important;
 }
+/*Buy Details*/
+.buy-image img{
+  width: 100%;
+}
+.buy-details h3{
+  font-size: 2.5rem;
+  font-family: Poppins-Regular;
+}
+.paypal-stripe{
+  display: flex;
+  justify-content: center;
+  margin:1rem 0;
+}
+.paypal-stripe img{
+  margin: .5rem;
+  height: 50px;
+  width: 80px;
+  border: 1px solid var(--mainOrange);
+  object-fit: contain;
+}
+.buy-rating{
+  display: flex;
+}
+.buy-rating .fa{
+  color: var(--mainYellow);
+}
+.buy-product-title h6{
+  font-size: 1.2rem;
+  font-family: Poppins-Regular;
+  color: var(--mainBlue);
+  margin: 1rem 0;
+}
+.product-price .buy-price{
+  font-size: 1.2rem;
+  font-family: Poppins-Regular;
+  color: var(--mainBlue);
+}
+.product-price .buy-sale-price{
+  font-size: 1.2rem;
+  font-family: Poppins-Regular;
+  color: var(--mainOrange);
+  margin-left: .5rem;
+}
+.buy-cart input{
+  width: 80px;
+  height: 50px;
+}
+.product-cart {
+  background-color: var(--mainBlack);
+  color: #ffffff;
+  padding: .85rem;
+  margin-left: .5rem;
+}
+.blue-text{
+  font-family: Poppins-Regular;
+  color: var(--mainBlue);
+}
+.green-text{
+  font-family: Poppins-Regular;
+  color: var(--mainGreen);
+}
 /*Footer*/
 .footer{
   background-color: var(--main-bg);
