@@ -19,7 +19,7 @@ export default class BrandProduct extends Component{
     
     async componentDidMount(){
         var brand_id = this.props.location.pathname.split('/')[3]
-        axios.get('http://167.86.108.124:3000/api/brand/product/'+brand_id)
+        axios.get('http://167.86.108.124:8070/api/brand/product/'+brand_id)
         .then(res=>{
             console.log(res);
             this.setState({products:res.data.result,loading:false})
