@@ -14,7 +14,6 @@ export default class ProductList extends Component{
     render(){
         return(
             <div>
-                <h3>Hello from ProductList</h3>
                 <div className="container mt-2">
                     <div className="border">
                         <h1 className="popular-trade">MOST POPULAR TRADE INS</h1>
@@ -39,9 +38,7 @@ export default class ProductList extends Component{
                         </div>
                     </div>
                 </div>
-                <ul>
-                    {this.state.products.map(product=><li key={product.id}>{product.name}</li>)}
-                </ul>
+                
             </div>
         )
         

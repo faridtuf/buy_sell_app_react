@@ -38,7 +38,7 @@ export default class Sell extends Component{
         brands : []
     }
     componentDidMount(){
-        axios.get('http://localhost:8014/api/product.brand')
+        axios.get('http://167.86.108.124:3000/api/product.brand')
         .then(res=>{
             console.log(res);
             this.setState({brands:res.data.result})
