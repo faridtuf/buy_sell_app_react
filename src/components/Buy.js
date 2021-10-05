@@ -18,7 +18,22 @@ import company6 from "../images/company6.png";
 import logo from "../logo.png";
 import company7 from "../images/company7.png";
 import iPhone13 from "../images/iphone-13.jpg";
+import axios from "axios";
 export default class Buy extends Component{
+    state = {
+        products : []
+    }
+    async componentDidMount(){
+        axios.get('https://we-sell-mobile-phones.myshopify.com/admin/api/2021-10/products.json',{
+            headers:{
+                'X-Shopify-Access-Token':'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',
+            }
+        })
+        .then(res=>{
+            console.log(res);
+            this.setState({products:res.data.result})
+        })
+    }
     render(){
         return(
             <div>

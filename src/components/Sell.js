@@ -31,7 +31,19 @@ import set1 from "../images/set-1.png"
 import set2 from "../images/set-2.png"
 import set3 from "../images/set-3.png"
 import set4 from "../images/set-4.png"
+import axios from "axios";
+
 export default class Sell extends Component{
+    state = {
+        brands : []
+    }
+    componentDidMount(){
+        axios.get('http://localhost:8014/api/product.brand')
+        .then(res=>{
+            console.log(res);
+            this.setState({brands:res.data.result})
+        })
+    }
     render(){
         return(
             <div>
@@ -266,69 +278,18 @@ export default class Sell extends Component{
                 </div>
                 <div className="container">
                     <div className="row">
+                    {this.state.brands.map(brand=>
                         <div className="col-xl-3 col-md-6 mb-2">
                             <div className="border h-100">
                                 <div className="perfect-center brand-height">
-                                    <a href="#">
-                                        <img src={brand1} alt="" className="brand-image"/>
+                                    <a href={'/brands/product/'+brand.id}>
+                                        <img src={`data:image/jpeg;base64,${brand.brand_image}`} alt="" className="brand-image"/>
                                     </a>
                                 </div>
                             </div>
                         </div>
-                        <div className="col-xl-3 col-md-6 mb-2">
-                            <div className="border h-100">
-                                <div className="perfect-center brand-height">
-                                    <a href="#">
-                                        <img src={brand2} alt="" className="brand-image"/>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-xl-3 col-md-6 mb-2">
-                            <div className="border h-100">
-                                <div className="perfect-center brand-height">
-                                    <a href="#">
-                                        <img src={brand3} alt="" className="brand-image"/>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-xl-3 col-md-6 mb-2">
-                            <div className="border h-100">
-                                <div className="perfect-center brand-height">
-                                    <a href="#">
-                                        <img src={brand4} alt="" className="brand-image"/>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-xl-3 col-md-6 mb-2">
-                            <div className="border h-100">
-                                <div className="perfect-center brand-height">
-                                    <a href="#">
-                                        <img src={brand5} alt="" className="brand-image"/>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-xl-3 col-md-6 mb-2">
-                            <div className="border h-100">
-                                <div className="perfect-center brand-height">
-                                    <a href="#">
-                                        <img src={brand6} alt="" className="brand-image"/>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-xl-3 col-md-6 mb-2">
-                            <div className="border h-100">
-                                <div className="perfect-center brand-height">
-                                    <a href="#">
-                                        <img src={brand1} alt="" className="brand-image"/>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+                    )}
+                        
                         <div className="col-xl-3 col-md-6 mb-2">
                             <div className="border h-100">
                                 <div className="perfect-center brand-height">

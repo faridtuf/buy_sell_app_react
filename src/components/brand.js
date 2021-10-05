@@ -20,7 +20,7 @@ import company3 from "../images/company3.png";
 import company4 from "../images/company4.png";
 import company5 from "../images/company5.png";
 import company6 from "../images/company6.png";
-export default class Sell extends Component{
+export default class Brand extends Component{
     render(){
         return(
             <div>

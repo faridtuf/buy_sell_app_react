@@ -10,25 +10,26 @@ import Details from './components/Details';
 import Cart from './components/Cart';
 import Default from './components/Default';
 import Product from './components/Product';
-import BuyProduct from './components/BuyProduct';
 import Buy from './components/Buy';
 import Sell from './components/Sell';
 import brand from './components/brand';
 import Footer from './components/Footer';
+import BrandProduct from './components/BrandProduct';
 
 function App() {
     return (
         <React.Fragment>
             <Navbar/>
             <Switch>
-                <Route exact path="/" component={ProductList}/>
+                
                 <Route path="/details" component={Details}/>
                 <Route path="/cart" component={Cart}/>
                 <Route path="/buy" component={Buy}/>
                 <Route path="/sell" component={Sell}/>
                 <Route path="/brand" component={brand}/>
                 <Route path="/product" component={Product}/>
-                <Route path="/BuyProduct" component={BuyProduct}/>
+                <Route path="/brands/product/" component={BrandProduct}/>
+                <Route exact path="/" component={ProductList}/>
                 <Route  component={Default}/>
 
             </Switch>
