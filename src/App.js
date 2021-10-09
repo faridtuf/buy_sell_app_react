@@ -15,6 +15,8 @@ import Sell from './components/Sell';
 import brand from './components/brand';
 import Footer from './components/Footer';
 import BrandProduct from './components/BrandProduct';
+import Login  from './components/login';
+import SignUp from './components/signup';
 
 function App() {
     return (
@@ -29,6 +31,8 @@ function App() {
                 <Route path="/brand" component={brand}/>
                 <Route path="/product" component={Product}/>
                 <Route path="/brands/product/" component={BrandProduct}/>
+                <Route path="/login" component={Login}/>
+                <Route path="/signup" component={SignUp}/>
                 <Route exact path="/" component={ProductList}/>
                 <Route  component={Default}/>
 
