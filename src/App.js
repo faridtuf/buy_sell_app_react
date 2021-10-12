@@ -17,6 +17,7 @@ import Footer from './components/Footer';
 import BrandProduct from './components/BrandProduct';
 import Login  from './components/login';
 import SignUp from './components/signup';
+import QuickBrandProduct from './components/QuickBrandProduct';
 
 function App() {
     return (
@@ -24,15 +25,16 @@ function App() {
             <Navbar/>
             <Switch>
                 
-                <Route path="/details" component={Details}/>
-                <Route path="/cart" component={Cart}/>
-                <Route path="/buy" component={Buy}/>
+                <Route exact path="/details" component={Details}/>
+                <Route exact path="/cart" component={Cart}/>
+                <Route exact path="/buy" component={Buy}/>
                 <Route path="/sell" component={Sell}/>
-                <Route path="/brand" component={brand}/>
-                <Route path="/product" component={Product}/>
-                <Route path="/brands/product/" component={BrandProduct}/>
-                <Route path="/login" component={Login}/>
-                <Route path="/signup" component={SignUp}/>
+                <Route exact path="/brand" component={brand}/>
+                <Route  path="/product" component={Product}/>
+                <Route  path="/brands/product/" component={BrandProduct}/>
+                <Route  path="/quick/brand/product/" component={QuickBrandProduct}/>
+                <Route exact path="/login" component={Login}/>
+                <Route exact path="/signup" component={SignUp}/>
                 <Route exact path="/" component={ProductList}/>
                 <Route  component={Default}/>
 

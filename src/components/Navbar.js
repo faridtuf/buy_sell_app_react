@@ -1,8 +1,24 @@
 import React,{Component} from "react";
 import { Link } from "react-router-dom";
 import logo from '../logo.png'
-
+import axios from "axios";
 export default class Navbar extends Component{
+    state = {
+        brands : [],
+        quick_brands :[]
+    }
+    componentDidMount(){
+        axios.get('http://167.86.108.124:8070/api/product.brand')
+        .then(res=>{
+            console.log(res);
+            this.setState({brands:res.data.result})
+        })
+        axios.get('http://localhost:8014/api/product.quick.brand')
+        .then(res=>{
+            console.log(res);
+            this.setState({quick_brands:res.data.result})
+        })
+    }
     render(){
         return(
             <div>
@@ -33,7 +49,10 @@ export default class Navbar extends Component{
                     <div className="container">
                         <nav className="navbar navbar-expand-lg navbar-light bg-transparent">
                             <div className="container-fluid">
-                                <span>SELL YOUR TECH:</span>
+                                <a className="nav-link nav-item dropdown-toggle" href="/" id="home"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    HOME
+                                </a>
                                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                                         aria-expanded="false" aria-label="Toggle navigation">
@@ -44,83 +63,43 @@ export default class Navbar extends Component{
                                         <li className="nav-item dropdown menu-large">
                                             <a className="nav-link dropdown-toggle" href="#" id="iphones"
                                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                Iphones
+                                                Sell My Phone
                                             </a>
                                             <ul className="dropdown-menu megamenu" aria-labelledby="iphones">
-                                                <div className="row">
+                                                {/* <div className="row">
                                                     <h6 className="col-md-12">Cell Iphones</h6>
-                                                </div>
+                                                </div> */}
                                                 <div className="row">
-                                                    <div className="col-6 col-md-3">
-                                                        <div className="dropdown-item">Sell iPhone 13 Pro Max</div>
-                                                        <div className="dropdown-item">Sell iPhone 12 Pro Max</div>
-                                                        <div className="dropdown-item">Sell iPhone 12 Pro</div>
-                                                        <div className="dropdown-item">Sell iPhone 13</div>
-                                                    </div>
-                                                    <div className="col-6 col-md-3">
-                                                        <div className="dropdown-item">Sell iPhone 13 Pro Max</div>
-                                                        <div className="dropdown-item">Sell iPhone 12 Pro Max</div>
-                                                        <div className="dropdown-item">Sell iPhone 12 Pro</div>
-                                                        <div className="dropdown-item">Sell iPhone 13</div>
-                                                    </div>
-                                                    <div className="col-6 col-md-3">
-                                                        <div className="dropdown-item">Sell iPhone 13 Pro Max</div>
-                                                        <div className="dropdown-item">Sell iPhone 12 Pro Max</div>
-                                                        <div className="dropdown-item">Sell iPhone 12 Pro</div>
-                                                        <div className="dropdown-item">Sell iPhone 13</div>
-                                                    </div>
-                                                    <div className="col-6 col-md-3">
-                                                        <div className="dropdown-item">Sell iPhone 13 Pro Max</div>
-                                                        <div className="dropdown-item">Sell iPhone 12 Pro Max</div>
-                                                        <div className="dropdown-item">Sell iPhone 12 Pro</div>
-                                                        <div className="dropdown-item">Sell iPhone 13</div>
-                                                    </div>
+                                                    {this.state.brands.map(brand=>
+                                                        <div className="col-6 col-md-3">
+                                                            <div className="dropdown-item">
+                                                            <a className="nav-link" href={'/brands/product/'+brand.id} id="iphones"
+                                                                role="button" >
+                                                                    {brand.name}
+                                                            </a>
+                                                            </div>
+                                                            
+                                                        </div>
+                                                    )}
+                                                    
                                                 </div>
+                                                <hr/>
                                                 <div className="row">
-                                                    <a className="text-black" href="#">See All Iphones >></a>
+                                                {this.state.quick_brands.map(q_brand=>
+                                                        <div className="col-6 col-md-3">
+                                                            <div className="dropdown-item">
+                                                            <a className="nav-link" href={'/quick/brand/product/'+q_brand.id} id="quick_brands"
+                                                                role="button" >
+                                                                    {q_brand.name}
+                                                            </a>
+                                                            </div>
+                                                            
+                                                        </div>
+                                                    )}
                                                 </div>
                                             </ul>
                                         </li>
-                                        <li className="nav-item dropdown menu-large">
-                                            <a className="nav-link dropdown-toggle" href="#" id="samsung"
-                                               role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                Samsung phones
-                                            </a>
-                                            <ul className="dropdown-menu megamenu" aria-labelledby="samsung">
-                                                <div className="row">
-                                                    <h6 className="col-md-12">Cell Samsung</h6>
-                                                </div>
-                                                <div className="row">
-                                                    <div className="col-6 col-md-3">
-                                                        <div className="dropdown-item">Sell iPhone 13 Pro Max</div>
-                                                        <div className="dropdown-item">Sell iPhone 12 Pro Max</div>
-                                                        <div className="dropdown-item">Sell iPhone 12 Pro</div>
-                                                        <div className="dropdown-item">Sell iPhone 13</div>
-                                                    </div>
-                                                    <div className="col-6 col-md-3">
-                                                        <div className="dropdown-item">Sell iPhone 13 Pro Max</div>
-                                                        <div className="dropdown-item">Sell iPhone 12 Pro Max</div>
-                                                        <div className="dropdown-item">Sell iPhone 12 Pro</div>
-                                                        <div className="dropdown-item">Sell iPhone 13</div>
-                                                    </div>
-                                                    <div className="col-6 col-md-3">
-                                                        <div className="dropdown-item">Sell iPhone 13 Pro Max</div>
-                                                        <div className="dropdown-item">Sell iPhone 12 Pro Max</div>
-                                                        <div className="dropdown-item">Sell iPhone 12 Pro</div>
-                                                        <div className="dropdown-item">Sell iPhone 13</div>
-                                                    </div>
-                                                    <div className="col-6 col-md-3">
-                                                        <div className="dropdown-item">Sell iPhone 13 Pro Max</div>
-                                                        <div className="dropdown-item">Sell iPhone 12 Pro Max</div>
-                                                        <div className="dropdown-item">Sell iPhone 12 Pro</div>
-                                                        <div className="dropdown-item">Sell iPhone 13</div>
-                                                    </div>
-                                                </div>
-                                                <div className="row">
-                                                    <a className="text-black" href="#">See All Samsung >></a>
-                                                </div>
-                                            </ul>
-                                        </li>
+                                        
                                     </ul>
                                 </div>
                             </div>
