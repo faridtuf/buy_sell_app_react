@@ -13,7 +13,7 @@ export default class Navbar extends Component{
             console.log(res);
             this.setState({brands:res.data.result})
         })
-        axios.get('http://localhost:8014/api/product.quick.brand')
+        axios.get('http://167.86.108.124:8070/api/product.quick.brand')
         .then(res=>{
             console.log(res);
             this.setState({quick_brands:res.data.result})

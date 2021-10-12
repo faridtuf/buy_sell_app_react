@@ -9,7 +9,7 @@ export default class QuickBrandProduct extends Component{
     
     async componentDidMount(){
         var brand_id = this.props.location.pathname.split('/')[4]
-        axios.get('http://localhost:8014/api/quick/brand/product/'+brand_id)
+        axios.get('http://167.86.108.124:8070/api/quick/brand/product/'+brand_id)
         .then(res=>{
             console.log(res);
             this.setState({quick_products:res.data.result,loading:false})
