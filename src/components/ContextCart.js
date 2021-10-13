@@ -67,7 +67,7 @@ const ContextCart = () => {
               <table className="table table-bordered">
                 <thead>
                 <tr>
-                  <th>Image</th>
+                  <th>Product Image</th>
                   <th>Title</th>
                   <th>Quantity</th>
                   <th>Price</th>
