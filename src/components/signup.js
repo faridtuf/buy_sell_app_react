@@ -90,7 +90,7 @@ export default class SignUp extends Component{
                                             </div>
                                         </div>
                                         <div className="col-md-12 mb-3">
-                                            <input type="submit" value="Continue" className="btn btn-sm btn-success"/>
+                                            <input type="submit" value="Sign Up" className="btn btn-sm btn-success"/>
                                         </div>
                                     </div>
                                 </form>
