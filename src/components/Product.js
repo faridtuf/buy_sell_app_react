@@ -46,7 +46,7 @@ export default class Product extends Component{
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-lg-5 col-md-6 mb-3">
+                            <div className="col-lg-9 col-md-6 mb-3">
                                 <div className="card">
                                     <div className="card-header">
                                         <h3>Condition / Network</h3>
@@ -54,28 +54,28 @@ export default class Product extends Component{
                                     <div className="card-body">
                                         <h3 className="product-sub-title">SELECT DEVICE CONDITION:</h3>
                                         <div className="row position-relative">
-                                            <div className="col-5">
+                                            <div className="col-8">
                                                 <div className="row">
                                                     <div className="col-12"><h5 className="network">CONDITION</h5></div>
-                                                    <div className="col-12">
+                                                    <div className="col">
                                                         <div className="position-relative">
                                                             <input type="checkbox" name="network" value="1"/>
                                                             <p>Like New</p>
                                                         </div>
                                                     </div>
-                                                    <div className="col-12">
+                                                    <div className="col">
                                                         <div className=" position-relative">
                                                             <input type="checkbox" name="network" value="2"/>
                                                             <p>Good</p>
                                                         </div>
                                                     </div>
-                                                    <div className="col-12">
+                                                    <div className="col">
                                                         <div className="position-relative">
                                                             <input type="checkbox" name="network" value="3"/>
                                                             <p>Poor</p>
                                                         </div>
                                                     </div>
-                                                    <div className="col-12">
+                                                    <div className="col">
                                                         <div className="position-relative">
                                                             <input type="checkbox" name="network" value="4"/>
                                                             <p>Faulty</p>
@@ -94,7 +94,7 @@ export default class Product extends Component{
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div className="col-7">
+                                            <div className="col-4">
                                                 <div className="card-body">
                                                     <div id="filters1" className="desc">
                                                         <ul className="nav flex-column">
@@ -124,34 +124,27 @@ export default class Product extends Component{
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-4 col-md-12 mb-3">
-                                <div className="card">
-                                    <div className="card-header">
-                                        <h3>Value</h3>
-                                    </div>
-                                    <div className="card-body">
-                                        <div className="gbp">
-                                            <h2>Select Condition & Network.</h2>
-                                            <h2><i className="fa fa-gbp" aria-hidden="true"></i></h2>
-                                            <p>The value of this device is dependent on the condition and network.</p>
-                                        </div>
-                                        <div className="price">
-                                            <h3>PRICE: £13.49</h3>
-                                            <form method='POST' className='quantity' action='#'>
-                                                <div id='quantity'>
-                                                    <label className="me-2">Qty:</label>
-                                                    <input type='text' name='quantity' value='1' className='qty'/>
-                                                    <div className="qty-btn">
-                                                        <input type='button' value='+' className='qtyplus plus' field='quantity'/>
-                                                        <input type='button' value='-' className='qtyminus minus' field='quantity'/>
-                                                    </div>
+                                            <div className="col-12">
+                                                <div className="gbp">
+                                                    <h2>Select Condition & Network.</h2>
+                                                    <h2><i className="fa fa-gbp" aria-hidden="true"></i></h2>
+                                                    <p>The value of this device is dependent on the condition and network.</p>
                                                 </div>
-                                                <input type="submit" className="btn btn-success rounded-0 sell-phone-now" value="Sell Now"/>
-                                            </form>
+                                                <div className="price">
+                                                    <h3>PRICE: £13.49</h3>
+                                                    <form method='POST' className='quantity' action='#'>
+                                                        <div id='quantity'>
+                                                            <label className="me-2">Qty:</label>
+                                                            <input type='text' name='quantity' value='1' className='qty'/>
+                                                            <div className="qty-btn">
+                                                                <input type='button' value='+' className='qtyplus plus' field='quantity'/>
+                                                                <input type='button' value='-' className='qtyminus minus' field='quantity'/>
+                                                            </div>
+                                                        </div>
+                                                        <input type="submit" className="btn btn-success rounded-0 sell-phone-now" value="Sell Now"/>
+                                                    </form>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
