@@ -39,7 +39,7 @@ export default class Login extends Component{
                                             <input type="submit" value="Login" className="btn btn-sm btn-success"/>
                                         </div>
                                     </div>
-                                    <p>Don't have an account? <a href="#">Register</a></p>
+                                    <p>Don't have an account? <a href={'/signup'}>Register</a></p>
                                 </form>
                             </div>
                         </div>

@@ -13,7 +13,7 @@ export default class SignUp extends Component{
                             <div className="col-md-8 sign-up-form">
                                 <form action="#">
                                     <h3>REGISTER ACCOUNT</h3>
-                                    <p>If you already have an account with us, please login at the <a href="#">login page.</a></p>
+                                    <p>If you already have an account with us, please login at the <a href={'/login'}>login page.</a></p>
                                     <div className="row">
                                         <div className="col-md-6 mb-3">
                                             <h6>YOUR PERSONAL DETAILS</h6>

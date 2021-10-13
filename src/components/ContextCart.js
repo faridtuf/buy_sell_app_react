@@ -137,7 +137,7 @@ const ContextCart = () => {
                <div className="w-75 ms-3">
                  <h3>NEW CUSTOMER</h3>
                  <p className="small">You must register an account so that we can track and process your order. Click Register below if you do not currently have an account with us.</p>
-                 <a href="#" className="btn btn-sm btn-success">Register New Account</a>
+                 <a href={'/signup'} className="btn btn-sm btn-success">Register New Account</a>
                </div>
               </div>
             </div>
