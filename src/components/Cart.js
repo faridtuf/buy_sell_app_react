@@ -52,10 +52,12 @@ const Cart = () => {
   }, [state.item]);
 
   return (
-    <CartContext.Provider
-      value={{ ...state, removeItem, clearCart, increment, decrement }}>
-      <ContextCart />
-    </CartContext.Provider>
+    <div className="container">
+      <CartContext.Provider
+          value={{ ...state, removeItem, clearCart, increment, decrement }}>
+        <ContextCart />
+      </CartContext.Provider>
+    </div>
   );
 };
 

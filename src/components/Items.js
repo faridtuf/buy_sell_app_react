@@ -6,34 +6,31 @@ const Items = ({ id, description, title, img, price, quantity }) => {
 
   return (
     <>
-      <div className="items-info">
-        <div className="product-img">
+        <tr className="items-info">
+        <td className="product-img">
           <img src={img} alt="iamge" />
-        </div>
+        </td>
 
-        <div className="title">
+        <td className="title">
           <h2>{title}</h2>
           <p>{description}</p>
-        </div>
+        </td>
 
-        <div className="add-minus-quantity">
-          <i className="fas fa-minus minus" onClick={() => decrement(id)}></i>
+        <td className="add-minus-quantity">
+          <i className="fa fa-minus minus" onClick={() => decrement(id)}></i>
           <input type="text" placeholder={quantity} disabled />
-          <i className="fas fa-plus add" onClick={() => increment(id)}></i>
-        </div>
+          <i className="fa fa-plus add" onClick={() => increment(id)}></i>
+        </td>
 
-        <div className="price">
+        <td className="price">
           <h3>{price}₹</h3>
-        </div>
+        </td>
 
-        <div className="remove-item">
-          <i
-            className="fas fa-trash-alt remove"
+        <td className="remove-item">
+          <i className="fa fa-trash btn btn-sm btn-danger remove"
             onClick={() => removeItem(id)}></i>
-        </div>
-      </div>
-
-      <hr />
+        </td>
+        </tr>
     </>
   );
 };
