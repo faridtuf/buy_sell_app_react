@@ -4,7 +4,9 @@
   height: inherit;
   align-items: center;
 }
-
+.cart-items-container .table{
+  margin-bottom: 0;
+}
 .continue-shopping .arrow-icon {
   width: 2.2rem;
   height: 2.2rem;
@@ -148,20 +150,19 @@
 
 .card-total {
   width: 100%;
-  margin-top: 2rem;
   text-align: right;
 }
-
+.card-total td{
+  border: 1px solid #ddd;
+}
 .card-total h3 {
-  font-size: 2rem;
+  font-size: 1.2rem;
   color: #606166;
 }
-
 .card-total h3 span {
   font-weight: bold;
-  font-size: 2rem;
   color: #000000;
-  margin-left: 1rem;
+  margin-right: 1rem;
 }
 /* hover effects  */
 .fa-trash-alt {

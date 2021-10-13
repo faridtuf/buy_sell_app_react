@@ -64,31 +64,42 @@ const ContextCart = () => {
 
           <div className="cart-items">
             <div className="cart-items-container">
+              <div className="table-responsive">
+                <table className="table table-bordered">
+                  <thead>
+                  <tr>
+                    <th>Product Image</th>
+                    <th>Title</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Remove</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  {/* <Scrollbars> */}
+                  {item.map((curItem) => {
+                    return <Items key={curItem.id} {...curItem} />;
+                  })}
+                  {/* </Scrollbars> */}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div className="card-total">
               <table className="table table-bordered">
-                <thead>
                 <tr>
-                  <th>Product Image</th>
-                  <th>Title</th>
-                  <th>Quantity</th>
-                  <th>Price</th>
-                  <th>Remove</th>
+                  <td>
+                    <h3>
+                      <span>Total :</span>{totalAmount}₹
+                    </h3>
+                  </td>
                 </tr>
-                </thead>
-                <tbody>
-                {/* <Scrollbars> */}
-                {item.map((curItem) => {
-                  return <Items key={curItem.id} {...curItem} />;
-                })}
-                {/* </Scrollbars> */}
-                </tbody>
               </table>
             </div>
           </div>
 
           <div className="card-total">
-            <h3>
-              Cart Total : <span>{totalAmount}₹</span>
-            </h3>
+
             <button className="btn btn-sm btn-success">checkout</button>
             <button className="btn btn-sm btn-primary ms-2" onClick={clearCart}>
               Clear Cart
