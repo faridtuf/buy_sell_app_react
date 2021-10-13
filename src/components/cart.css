@@ -164,6 +164,34 @@
   color: #000000;
   margin-right: 1rem;
 }
+.checkout h5{
+  background-color: var(--mainBlack);
+  padding: .5rem;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 1rem 0;
+  color: var(--mainWhite);
+}
+.checkout h3{
+  color: var(--mainBlack);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.checkout label{
+  font-weight: bold;
+  font-size: .9rem;
+}
+.checkout .form-control{
+  border: 1px solid var(--mainBlack);
+  border-radius: 0;
+}
+.checkout p{
+  color: #595959;
+}
+.or-image img{
+  width: 50%;
+}
 /* hover effects  */
 .fa-trash-alt {
   color: #ed4848;
@@ -236,5 +264,8 @@
   .card-total {
     margin-bottom: 2rem;
     text-align: center;
+  }
+  .or-image img {
+    display: none;
   }
 }
