@@ -146,6 +146,34 @@ body{
   padding: 10px;
   padding-left: 50px;
 }
+.sign-up-logo{
+  justify-content: center;
+  align-items: center;
+}
+.sign-up-logo img{
+  width: 100%;
+}
+.sign-up-form h3{
+  font-weight: bold;
+}
+.sign-up-form p a{
+  color: var(--mainOrange);
+  text-decoration: none;
+}
+.sign-up-form p{
+  color: var(--mainGray);
+}
+.sign-up-form h6{
+  font-weight: bold;
+}
+.sign-up-form label{
+  font-size: .8rem;
+  font-weight: bold;
+}
+.sign-up-form .form-control{
+  border: 1px solid var(--mainBlack);
+  border-radius: 0;
+}
 /* globals */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Titillium+Web:wght@400;700&display=swap");
 
@@ -1253,6 +1281,9 @@ input.qtyplus,input.qtyminus {
   .banner-right .phones{
     left: 450px;
     width: 50%;
+  }
+  .sign-up-form {
+    margin-top: 3rem !important;
   }
 }
 @media screen and (max-width: 576px) {
