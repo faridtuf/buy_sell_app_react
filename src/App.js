@@ -18,6 +18,7 @@ import BrandProduct from './components/BrandProduct';
 import Login  from './components/login';
 import SignUp from './components/signup';
 import QuickBrandProduct from './components/QuickBrandProduct';
+import BuyProduct from './components/BuyProduct';
 
 function App() {
     return (
@@ -27,15 +28,17 @@ function App() {
                 
                 <Route exact path="/details" component={Details}/>
                 <Route exact path="/cart" component={Cart}/>
-                <Route exact path="/buy" component={Buy}/>
+                
                 <Route path="/sell" component={Sell}/>
                 <Route exact path="/brand" component={brand}/>
                 <Route  path="/product" component={Product}/>
+                <Route  path="/buy/product" component={BuyProduct}/>
                 <Route  path="/brands/product/" component={BrandProduct}/>
                 <Route  path="/quick/brand/product/" component={QuickBrandProduct}/>
                 <Route exact path="/login" component={Login}/>
                 <Route exact path="/signup" component={SignUp}/>
                 <Route exact path="/" component={ProductList}/>
+                <Route exact path="/buy" component={Buy}/>
                 <Route  component={Default}/>
 
             </Switch>

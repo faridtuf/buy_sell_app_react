@@ -1383,3 +1383,24 @@ input.qtyplus,input.qtyminus {
     font-size:2.3rem
   }
 }
+
+.product-details .network-image{
+  width: 100%;
+  padding-left: 20px;
+}
+[name=network] {
+  position: absolute;
+  top: 12px;
+  left: 10px;
+  display: block;
+}
+[name=network] + img {
+  cursor: pointer;
+}
+[name=network]:checked + img {
+  border-bottom: 2px solid #f00;
+}
+[name=network] + p {
+  padding: 7px 30px;
+}
+

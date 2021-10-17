@@ -2,20 +2,37 @@ import React,{Component} from "react";
 import product1 from "../images/iphone-11.jpg"
 import svg1 from "../images/paypal.svg"
 import svg2 from "../images/stripe-pay.svg"
-
-export default class Product extends Component{
+import axios from "axios";
+export default class BuyProduct extends Component{
+    state = {
+        loading : true,
+        product : null
+    }
+    
+    async componentDidMount(){
+        var product_id = this.props.location.pathname.split('/')[3]
+        axios.get('http://167.86.108.124:8070/get_single_product/'+product_id)
+        .then(res=>{
+            console.log(res.data.product);
+            this.setState({product:res.data.product,loading:false})
+        })
+    }
     render(){
         return(
-            <div className="container mt-5">
+            <div>
+                {this.state.loading || !this.state.product ? (
+                    <div>Loading...</div>
+                ) : (
+                    <div className="container mt-5">
                 <div className="row">
                     <div className="col-md-3 mb-3">
                         <div className="buy-image">
-                            <img src={product1} alt="" className="main-image"/>
+                            <img src={this.state.product.image.src} alt="" className="main-image"/>
                         </div>
                     </div>
                     <div className="col-md-9 mb-3">
                         <div className="buy-details">
-                            <h3>Samsung Galaxy S20 Ultra 12GB Ram 128GB Unlocked Grade A</h3>
+                            <h3>{this.state.product.title}</h3>
                             <div className="paypal-stripe">
                                 <img src={svg1} alt=""/>
                                 <img src={svg2} alt=""/>
@@ -54,6 +71,9 @@ export default class Product extends Component{
                     </div>
                 </div>
             </div>
+                )}
+            </div>
+            
         )
     }
 }

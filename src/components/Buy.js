@@ -24,14 +24,10 @@ export default class Buy extends Component{
         products : []
     }
     async componentDidMount(){
-        axios.get('https://we-sell-mobile-phones.myshopify.com/admin/api/2021-10/products.json',{
-            headers:{
-                'X-Shopify-Access-Token':'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',
-            }
-        })
+        axios.get('http://167.86.108.124:8070/get_products')
         .then(res=>{
-            console.log(res);
-            this.setState({products:res.data.result})
+            console.log(res.data.products);
+            this.setState({products:res.data.products})
         })
     }
     render(){
@@ -88,110 +84,21 @@ export default class Buy extends Component{
                         <h1>Most Popular Refurbished Phones</h1>
                     </div>
                     <div className="row">
+                    {this.state.products.map(product=>
                         <div className="col-lg-3 col-md-6 mb-3">
                             <a href="#" className="refurbished-phones">
-                                <p>Apple</p>
                                 <div className="my-2">
-                                    <h5>iPhone 11</h5>
-                                    <h5>Refurbished</h5>
-                                    <img src={refurbished1} alt=""/>
+                                    <h5>{product.title}</h5>
+                                    <img src={product.image.src} alt=""/>
                                     <h6>PRICES FROM $141.19</h6>
                                     <h6>PRICES FROM <del>$141.19</del></h6>
                                 </div>
-                                <a href="#" className="view-details">View Details</a>
+                                <a href={'/buy/product/'+product.id} className="view-details">View Details</a>
                             </a>
+                            
                         </div>
-                        <div className="col-lg-3 col-md-6 mb-3">
-                            <a href="#" className="refurbished-phones">
-                                <p>Apple</p>
-                                <div className="my-2">
-                                    <h5>iPhone 11</h5>
-                                    <h5>Refurbished</h5>
-                                    <img src={refurbished1} alt=""/>
-                                    <h6>PRICES FROM $141.19</h6>
-                                    <h6>PRICES FROM <del>$141.19</del></h6>
-                                </div>
-                                <a href="#" className="view-details">View Details</a>
-                            </a>
-                        </div>
-                        <div className="col-lg-3 col-md-6 mb-3">
-                            <a href="#" className="refurbished-phones">
-                                <p>Apple</p>
-                                <div className="my-2">
-                                    <h5>iPhone 11</h5>
-                                    <h5>Refurbished</h5>
-                                    <img src={refurbished1} alt=""/>
-                                    <h6>PRICES FROM $141.19</h6>
-                                    <h6>PRICES FROM <del>$141.19</del></h6>
-                                </div>
-                                <a href="#" className="view-details">View Details</a>
-                            </a>
-                        </div>
-                        <div className="col-lg-3 col-md-6 mb-3">
-                            <a href="#" className="refurbished-phones">
-                                <p>Apple</p>
-                                <div className="my-2">
-                                    <h5>iPhone 11</h5>
-                                    <h5>Refurbished</h5>
-                                    <img src={refurbished1} alt=""/>
-                                    <h6>PRICES FROM $141.19</h6>
-                                    <h6>PRICES FROM <del>$141.19</del></h6>
-                                </div>
-                                <a href="#" className="view-details">View Details</a>
-                            </a>
-                        </div>
-                        <div className="col-lg-3 col-md-6 mb-3">
-                            <a href="#" className="refurbished-phones">
-                                <p>Apple</p>
-                                <div className="my-2">
-                                    <h5>iPhone 11</h5>
-                                    <h5>Refurbished</h5>
-                                    <img src={refurbished1} alt=""/>
-                                    <h6>PRICES FROM $141.19</h6>
-                                    <h6>PRICES FROM <del>$141.19</del></h6>
-                                </div>
-                                <a href="#" className="view-details">View Details</a>
-                            </a>
-                        </div>
-                        <div className="col-lg-3 col-md-6 mb-3">
-                            <a href="#" className="refurbished-phones">
-                                <p>Apple</p>
-                                <div className="my-2">
-                                    <h5>iPhone 11</h5>
-                                    <h5>Refurbished</h5>
-                                    <img src={refurbished1} alt=""/>
-                                    <h6>PRICES FROM $141.19</h6>
-                                    <h6>PRICES FROM <del>$141.19</del></h6>
-                                </div>
-                                <a href="#" className="view-details">View Details</a>
-                            </a>
-                        </div>
-                        <div className="col-lg-3 col-md-6 mb-3">
-                            <a href="#" className="refurbished-phones">
-                                <p>Apple</p>
-                                <div className="my-2">
-                                    <h5>iPhone 11</h5>
-                                    <h5>Refurbished</h5>
-                                    <img src={refurbished1} alt=""/>
-                                    <h6>PRICES FROM $141.19</h6>
-                                    <h6>PRICES FROM <del>$141.19</del></h6>
-                                </div>
-                                <a href="#" className="view-details">View Details</a>
-                            </a>
-                        </div>
-                        <div className="col-lg-3 col-md-6 mb-3">
-                            <a href="#" className="refurbished-phones">
-                                <p>Apple</p>
-                                <div className="my-2">
-                                    <h5>iPhone 11</h5>
-                                    <h5>Refurbished</h5>
-                                    <img src={refurbished1} alt=""/>
-                                    <h6>PRICES FROM $141.19</h6>
-                                    <h6>PRICES FROM <del>$141.19</del></h6>
-                                </div>
-                                <a href="#" className="view-details">View Details</a>
-                            </a>
-                        </div>
+                    )}
+                       
                     </div>
                 </div>
                 <div className="container mt-5">
