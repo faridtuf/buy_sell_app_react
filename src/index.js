@@ -42,7 +42,7 @@ $(document).ready(function() {
         });
 });
 $(document).ready(function() {
-    $("input[name$='network']").click(function() {
+    $("input[name$='hello']").click(function() {
         var test = $(this).val();
 
         $("div.desc").hide();

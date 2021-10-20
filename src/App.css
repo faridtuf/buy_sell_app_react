@@ -1083,7 +1083,6 @@ body {
 }
 .product-details .price{
   text-align: center;
-  display: none;
 }
 .product-details .price h3{
   color: var(--mainOrange);

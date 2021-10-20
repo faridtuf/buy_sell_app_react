@@ -5,7 +5,7 @@ export default class ProductList extends Component{
         products : []
     }
     componentDidMount(){
-        axios.get('http://167.86.108.124:8070/api/product.product')
+        axios.get('http://167.86.108.124:8070/api/product.template')
         .then(res=>{
             console.log(res);
             this.setState({products:res.data.result})
