@@ -17,7 +17,7 @@ export default class Product extends Component{
         size_price:0,
         condition_price:0,
     }
-    
+
     async componentDidMount(){
         var product_id = this.props.location.pathname.split('/')[2]
         axios.get('http://167.86.108.124:8070/api/product.template/'+product_id)
@@ -63,8 +63,13 @@ export default class Product extends Component{
                 this.setState({'total_price':res.data.total_price})
             })
           }
-    
-    
+
+    addQuantity(e) {
+        alert('add');
+    }
+    minusQuantity(e){
+        alert('minus');
+    }
     render(){
         return(
             <div>
@@ -159,8 +164,8 @@ export default class Product extends Component{
                                                 <label className="me-2">Qty:</label>
                                                 <input type='text' name='quantity'  className='qty'/>
                                                 <div className="qty-btn">
-                                                    <input type='button' value='+' className='qtyplus plus' field='quantity'/>
-                                                    <input type='button' value='-' className='qtyminus minus' field='quantity'/>
+                                                    <button type='button' onClick={this.addQuantity} className='qtyplus plus'>+</button>
+                                                    <button type='button' onClick={this.minusQuantity} className='qtyminus minus'>-</button>
                                                 </div>
                                             </div>
                                             <input type="submit" className="btn btn-success rounded-0 sell-phone-now" value="Sell Now"/>

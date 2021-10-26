@@ -1138,7 +1138,7 @@ body {
 .qty-btn{
   width: 30px;
 }
-input.qtyplus,input.qtyminus {
+.qtyplus,.qtyminus {
   display: block;
   width: 27px;
   height: 18px;
