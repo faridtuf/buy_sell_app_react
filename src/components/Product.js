@@ -86,39 +86,57 @@ export default class Product extends Component{
                             
                                 <div className="row align-items-center">
                                     <div className="col-2"><h5 className="network">NETWORK</h5></div>
-                                    {this.state.product.my_dict.network_data.map(att=>
-                                        <div className="col">
-                                            <div className="bg-light position-relative">
-                                                <input type="radio" name="Network" value={att.attribute_id} onChange={this.handleChange.bind(this)} />
-                                                {/* <img src={network1} alt="" className="network-image"/> */}
-                                                <div>{att.attribute_name}</div>
-                                            </div>
+                                    <div className="col-10">
+                                        <div className="row">
+                                            {this.state.product.my_dict.network_data.map(att=>
+                                                <div className="col-2 mb-2">
+                                                    <div className="bg-light position-relative">
+                                                        <label className="sell-network">
+                                                            <input type="radio" name="Network" value={att.attribute_id} onChange={this.handleChange.bind(this)} />
+                                                            <img src={network1} alt="" className="network-image"/>
+                                                            {/*<div>{att.attribute_name}</div>*/}
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            )}
                                         </div>
-                                    )}
+                                    </div>
                                 </div>
                                 <div className="row align-items-center">
                                     <div className="col-2"><h5 className="network">Condition</h5></div>
-                                    {this.state.product.my_dict.condition_data.map(att=>
-                                        <div className="col">
-                                            <div className="bg-light position-relative">
-                                                <input type="radio" name="Condition" value={att.attribute_id} onChange={this.handleChange.bind(this)}/>
-                                                {/* <img src={network1} alt="" className="network-image"/> */}
-                                                <div>{att.attribute_name}</div>
-                                            </div>
+                                    <div className="col-10">
+                                        <div className="row">
+                                            {this.state.product.my_dict.condition_data.map(att=>
+                                                <div className="col-3 mb-2">
+                                                    <div className="bg-light position-relative">
+                                                        <label className="sell-size">
+                                                            <input type="radio" name="Condition" value={att.attribute_id} onChange={this.handleChange.bind(this)}/>
+                                                            {/* <img src={network1} alt="" className="network-image"/> */}
+                                                            <div className="ms-2">{att.attribute_name}</div>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            )}
                                         </div>
-                                    )}
+                                    </div>
                                 </div>
                                 <div className="row align-items-center">
                                     <div className="col-2"><h5 className="network">SIZE</h5></div>
-                                    {this.state.product.my_dict.size_data.map(att=>
-                                        <div className="col">
-                                            <div className="bg-light position-relative">
-                                                <input type="radio" name="Size" value={att.attribute_id} onChange={this.handleChange.bind(this)} />
-                                                {/* <img src={network1} alt="" className="network-image"/> */}
-                                                <div>{att.attribute_name}</div>
-                                            </div>
+                                    <div className="col-10">
+                                        <div className="row">
+                                            {this.state.product.my_dict.size_data.map(att=>
+                                                <div className="col mb-2">
+                                                    <div className="bg-light position-relative">
+                                                        <label className="sell-size">
+                                                            <input type="radio" name="Size" value={att.attribute_id} onChange={this.handleChange.bind(this)} />
+                                                            {/* <img src={network1} alt="" className="network-image"/> */}
+                                                            <div className="ms-2">{att.attribute_name}</div>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            )}
                                         </div>
-                                    )}
+                                    </div>
                                 </div>
                             
                         </div>

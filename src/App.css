@@ -12,6 +12,7 @@
   --mainBuy:#5bced3;
   --mainGreen:#060;
   --buyProduct:#484848;
+  --SellProduct:#f4f4f4;
 }
 a{
   text-decoration: none;
@@ -36,7 +37,7 @@ body{
   font-family: Poppins-Light !important;
   color: var(--mainDark) !important;
   overflow-x: hidden;
-  background-color: #f5f5f5 !important;
+  background-color: #ffffff !important;
 }
 .text-title{
   font-family: "Oswald",sans-serif !important;
@@ -1040,6 +1041,27 @@ body {
   padding: 8px 30px 0;
   font-family: 'Poppins-SemiBold';
   font-size: .9rem;
+}
+.sell-network [type=radio] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.sell-network [type=radio] + img {
+  cursor: pointer;
+  padding-left: 0;
+}
+.sell-network [type=radio]:checked + img {
+  border-bottom: 3px solid #f00;
+}
+.sell-size{
+  background-color: var(--SellProduct);
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0.75rem;
+  font-size: .8rem;
+  font-weight: bolder;
 }
 .trade-price h3{
   color: #fff!important;
