@@ -63,8 +63,8 @@ export default class Buy extends Component{
                     </div>
                 </div>
                 <div className="container">
-                    <div className="refurbished mt-5">
-                        <h4>PHONES TABLETS & ACCESSORIES</h4>
+                    <div className="refurbished">
+                        <h4 className="my-5">PHONES TABLETS & ACCESSORIES</h4>
                         <div className="row">
                             <div className="col-lg-3 col-md-6 mb-3">
                                 <div className="accessories">
