@@ -119,12 +119,12 @@ export default class Buy extends Component{
                 </div>
                 <div className="container">
                     <div className="row align-items-center">
-                        <div className="col-md-6">
+                        <div className="col-md-6 mb-3">
                             <div className="buy-deals">
                                 <img src={deal} alt=""/>
                             </div>
                         </div>
-                        <div className="col-md-6">
+                        <div className="col-md-6 mb-3">
                             <div className="buy-deals-details">
                                 <h3>Deal of the month</h3>
                                 <p className="lead">Meizu M5 Note 16 GB (Dual Sim) - Grey - Gold Unlocked Grade A</p>
