@@ -15,6 +15,15 @@ import company3 from "../images/company3.png";
 import company4 from "../images/company4.png";
 import company5 from "../images/company5.png";
 import company6 from "../images/company6.png";
+import accessories1 from "../images/accessories-1.jpg";
+import accessories2 from "../images/accessories-2.jpg";
+import accessories3 from "../images/accessories-3.jpg";
+import accessories4 from "../images/accessories-4.jpg";
+import accessories5 from "../images/accessories-5.jpg";
+import accessories6 from "../images/accessories-6.jpg";
+import accessories7 from "../images/accessories-7.jpg";
+import accessories8 from "../images/accessories-8.jpg";
+import deal from "../images/deal.png";
 import logo from "../logo.png";
 import company7 from "../images/company7.png";
 import iPhone13 from "../images/iphone-13.jpg";
@@ -54,51 +63,75 @@ export default class Buy extends Component{
                     </div>
                 </div>
                 <div className="container">
-                    <div className="refurbished">
-                        <h1>Refurbished Smartphones</h1>
-                        <h4>Smarter than a new phone</h4>
-                        <div className="row justify-content-center">
-                            <div className="col-md-3">
-                                <div className="row refurbished-icons">
-                                    <div className="col-2"><i className="fa fa-usd"></i></div>
-                                    <div className="col-md-10"><p>Quality phones at better than new prices</p></div>
+                    <div className="refurbished mt-5">
+                        <h4>PHONES TABLETS & ACCESSORIES</h4>
+                        <div className="row">
+                            <div className="col-lg-3 col-md-6 mb-3">
+                                <div className="accessories">
+                                    <img src={accessories1} alt=""/>
+                                    <h3>Apple iPhones</h3>
                                 </div>
                             </div>
-                            <div className="col-md-3">
-                                <div className="row refurbished-icons">
-                                    <div className="col-2"><i className="fa fa-check"></i></div>
-                                    <div className="col-md-10"><p>Every device tested to be 100% fully functional</p></div>
+                            <div className="col-lg-3 col-md-6 mb-3">
+                                <div className="accessories">
+                                    <img src={accessories2} alt=""/>
+                                    <h3>Samsung Mobile Phones</h3>
                                 </div>
                             </div>
-                            <div className="col-md-3">
-                                <div className="row refurbished-icons">
-                                    <div className="col-2"><i className="fa fa-leaf"></i></div>
-                                    <div className="col-md-10"><p>More sustainable way to buy a phone</p></div>
+                            <div className="col-lg-3 col-md-6 mb-3">
+                                <div className="accessories">
+                                    <img src={accessories3} alt=""/>
+                                    <h3>Oppo</h3>
+                                </div>
+                            </div>
+                            <div className="col-lg-3 col-md-6 mb-3">
+                                <div className="accessories">
+                                    <img src={accessories4} alt=""/>
+                                    <h3>Xiaomi</h3>
+                                </div>
+                            </div>
+                            <div className="col-lg-3 col-md-6 mb-3">
+                                <div className="accessories">
+                                    <img src={accessories5} alt=""/>
+                                    <h3>Tablets For Sale</h3>
+                                </div>
+                            </div>
+                            <div className="col-lg-3 col-md-6 mb-3">
+                                <div className="accessories">
+                                    <img src={accessories6} alt=""/>
+                                    <h3>Apple iPhones</h3>
+                                </div>
+                            </div>
+                            <div className="col-lg-3 col-md-6 mb-3">
+                                <div className="accessories">
+                                    <img src={accessories7} alt=""/>
+                                    <h3>Apple Mobile Phones Accessories</h3>
+                                </div>
+                            </div>
+                            <div className="col-lg-3 col-md-6 mb-3">
+                                <div className="accessories">
+                                    <img src={accessories8} alt=""/>
+                                    <h3>iPad Accessories</h3>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div className="container">
-                    <div className="refurbished">
-                        <h1>Most Popular Refurbished Phones</h1>
-                    </div>
-                    <div className="row">
-                    {this.state.products.map(product=>
-                        <div className="col-lg-3 col-md-6 mb-3">
-                            <a href="#" className="refurbished-phones">
-                                <div className="my-2">
-                                    <h5>{product.title}</h5>
-                                    <img src={product.image.src} alt=""/>
-                                    <h6>PRICES FROM $141.19</h6>
-                                    <h6>PRICES FROM <del>$141.19</del></h6>
-                                </div>
-                                <a href={'/buy/product/'+product.id} className="view-details">View Details</a>
-                            </a>
-                            
+                    <div className="row align-items-center">
+                        <div className="col-md-6">
+                            <div className="buy-deals">
+                                <img src={deal} alt=""/>
+                            </div>
                         </div>
-                    )}
-                       
+                        <div className="col-md-6">
+                            <div className="buy-deals-details">
+                                <h3>Deal of the month</h3>
+                                <p className="lead">Meizu M5 Note 16 GB (Dual Sim) - Grey - Gold Unlocked Grade A</p>
+                                <p className="lead">Only £55.00</p>
+                                <a href="#" className="deal-btn">Buy Now Limited stock</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div className="container mt-5">

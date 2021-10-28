@@ -38,11 +38,55 @@ export default class Navbar extends Component{
                                     <h4>Trusted since 2008. Over $575 million paid out to customers!</h4>
                                 </div>
                             </div>
-                            <div className="col-lg-4">
+                            <div className="col-lg-4 text-end">
                                 <a className="sell-phone active" href="/sell/">SELL</a>
                                 <a className="buy-phone" href="/buy/">BUY</a>
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div className="menu-border">
+                    <div className="container">
+                        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+                            <div className="container-fluid">
+                                <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                        aria-expanded="false" aria-label="Toggle navigation">
+                                    <span className="navbar-toggler-icon"></span>
+                                </button>
+                                <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                                        <li className="nav-item">
+                                            <a className="nav-link active" aria-current="page" href="#">Home</a>
+                                        </li>
+                                        <li className="nav-item dropdown">
+                                            <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                               data-bs-toggle="dropdown" aria-expanded="false">
+                                                Mobile Phones
+                                            </a>
+                                            <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                <li><a className="dropdown-item" href="#">Samsung</a></li>
+                                                <li><a className="dropdown-item" href="#">Apple</a></li>
+                                            </ul>
+                                        </li>
+                                        <li className="nav-item">
+                                            <a className="nav-link" href="#">Laptops</a>
+                                        </li>
+                                    </ul>
+                                    <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
+                                        <li className="nav-item ms-2">
+                                            <a className="nav-link" href="#"><i className="fa fa-search"></i></a>
+                                        </li>
+                                        <li className="nav-item ms-2">
+                                            <a className="nav-link" href="#"><i className="fa fa-user"></i></a>
+                                        </li>
+                                        <li className="nav-item ms-2">
+                                            <a className="nav-link" href="#"><i className="fa fa-shopping-cart"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
                     </div>
                 </div>
             </div>

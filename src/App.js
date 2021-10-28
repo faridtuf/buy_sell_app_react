@@ -41,7 +41,8 @@ function App() {
     return (
         <React.Fragment>
             <Switch>
-                <MainNav exact path="/details" component={Details}/>
+                <Route exact path="/details" component={Details}/>
+                {/*<Route exact path="/cart" component={Cart}/>*/}
                 <MainNav exact path="/cart" component={Cart}/>
                 <MainNav path="/sell" component={Sell}/>
                 <MainNav exact path="/brand" component={brand}/>

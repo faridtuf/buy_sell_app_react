@@ -38,7 +38,7 @@ export default class Navbar extends Component{
                                     <h4>Trusted since 2008. Over $575 million paid out to customers!</h4>
                                 </div>
                             </div>
-                            <div className="col-lg-4">
+                            <div className="col-lg-4 text-end">
                                 <a className="sell-phone active" href="/sell/">SELL</a>
                                 <a className="buy-phone" href="/buy/">BUY</a>
                             </div>
