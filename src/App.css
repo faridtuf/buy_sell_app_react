@@ -1248,6 +1248,52 @@ body {
   text-decoration: none;
   padding: .5rem 1rem;
 }
+.feature-collection,
+.feature-collection:hover{
+  text-align: left;
+  text-decoration: none;
+  color: var(--mainBlack);
+}
+.feature-collection img{
+  width: 100%;
+  object-fit: contain;
+  height: 250px
+}
+.feature-collection h3{
+  font-weight: bold;
+  font-size: 1rem;
+  color: var(--mainBlack);
+  margin: .5rem 0;
+}
+.feature-collection p{
+  color: #9398da;
+}
+.feature-collection p del{
+  color: var(--mainOrange);
+}
+.not-missed{
+  position: relative;
+}
+.not-missed img{
+  width: 100%;
+  object-fit: cover;
+}
+.not-missed img:hover{
+  opacity: 0.8;
+}
+.not-missed h3{
+  color: var(--mainWhite);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 2rem;
+  font-weight: bold;
+  width: 70%;
+}
+.smart-watch img{
+  height: 190px;
+}
 /*Footer*/
 .footer{
   background-color: var(--main-bg);
