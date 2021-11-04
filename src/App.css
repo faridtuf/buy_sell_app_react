@@ -1504,4 +1504,256 @@ body {
 [name=network] + p {
   padding: 7px 30px;
 }
+.text-center {
+  text-align: center !important;
+  font-size: 30px;
+}
+.hero-btn {
+  background-color: #000000;
+  color: #ff7b00;
+}
+.body {
+  background-color: #EEEEEE;
+}
 
+.header {
+  background-color: white !important;
+}
+
+.address {
+  margin-top: 10px;
+}
+
+.btn {
+  float: right;
+  background-color: #e85b2e;
+  margin-top: -5rem;
+
+}
+
+.vertical-menu {
+  width: 300px;
+  /* Set a width if you like */
+  float: left;
+}
+.font {
+  font-size: larger;
+}
+.vertical-menu a {
+  background-color: #e85b2e;
+  /* Grey background color */
+  color: whitesmoke;
+  /* Black text color */
+  display: block;
+  /* Make the links appear below each other */
+  padding: 12px;
+  /* Add some padding */
+  text-decoration: none;
+  /* Remove underline from links */
+}
+
+.vertical-menu a:hover {
+  background-color: #e85b2e;
+  /* Dark grey background on mouse-over */
+}
+
+.vertical-menu a.active {
+  background-color: #e85b2e;
+  /* Add a green color to the "active/current" link */
+  color: white;
+  font-size: 40px;
+  ;
+}
+body {
+  background-color: #EEEEEE;
+}
+
+.payment {
+  margin-left: 10rem;
+  margin-top: 5rem;
+}
+
+.btn {
+  float: right;
+  background-color: #e85b2e;
+}
+
+.header {
+  background-color: #e85b2e;
+}
+
+.vertical-menu {
+  width: 300px;
+  /* Set a width if you like */
+  float: right;
+}
+
+.vertical-menu a {
+  background-color: #e85b2e;
+  /* Grey background color */
+  color: whitesmoke;
+  /* Black text color */
+  display: block;
+  /* Make the links appear below each other */
+  padding: 12px;
+  /* Add some padding */
+  text-decoration: none;
+  /* Remove underline from links */
+}
+
+.vertical-menu a:hover {
+  background-color: #e85b2e;
+  /* Dark grey background on mouse-over */
+}
+
+.vertical-menu a.active {
+  background-color: #e85b2e;
+  /* Add a green color to the "active/current" link */
+  color: white;
+  font-size: 20px;
+}
+body {
+  background-color: #EEEEEE;
+}
+
+.btn {
+
+  background-color: #e85b2e;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.card {
+  margin-top: 10rem;
+  background-color: #EEEEEE ;
+  margin-left: 10rem;
+  margin-right: 20rem;
+
+}
+
+.vertical-menu {
+  width: 300px;
+  /* Set a width if you like */
+  float: right;
+}
+
+.vertical-menu a {
+  background-color: #e85b2e;
+  /* Grey background color */
+  color: whitesmoke;
+  /* Black text color */
+  display: block;
+  /* Make the links appear below each other */
+  padding: 12px;
+  /* Add some padding */
+  text-decoration: none;
+  /* Remove underline from links */
+}
+
+.vertical-menu a:hover {
+  background-color: #e85b2e;
+  /* Dark grey background on mouse-over */
+}
+
+.vertical-menu a.active {
+  background-color: #e85b2e;
+  /* Add a green color to the "active/current" link */
+  color: white;
+  font-size: 20px;
+}
+.card{
+  margin-top: 10rem;
+  background-color: #EEEEEE;
+}
+.btn{
+  
+  background-color: #e85b2e;
+  width: 8rem;
+  margin:auto;
+  color: honeydew;
+}
+body{
+background-color: #EEEEEE;
+}
+.vertical-menu {
+width: 300px; /* Set a width if you like */
+float: right;
+}
+
+.vertical-menu a {
+background-color: #e85b2e; /* Grey background color */
+color: whitesmoke; /* Black text color */
+display: block; /* Make the links appear below each other */
+padding: 12px; /* Add some padding */
+text-decoration: none; /* Remove underline from links */
+}
+
+.vertical-menu a:hover {
+background-color: #e85b2e; /* Dark grey background on mouse-over */
+}
+
+.vertical-menu a.active {
+background-color:  #e85b2e; /* Add a green color to the "active/current" link */
+color: white;
+font-size: 20px;
+}
+.contfrm{
+  width: 450px;
+  margin-left: 450px;
+}
+.signIn{
+  background-color:#000 ;
+  font-size: 15px;
+  padding: 10px;
+  color: #e85b2e;
+  border: 2px solid black;
+  border-radius: 3px;
+  
+
+}
+
+.forgot a :hover{
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+    
+}
+*{
+  padding: 0%;
+  margin: 0%;
+}
+body{
+background-color: grey;
+}
+img{
+ width: 150px;
+}
+h2 ,h4{
+  text-align: center;
+}
+.det{
+  text-align: center;
+}
+.logout{
+font-size:20px;
+text-align: center;
+justify-content: center;
+font-weight: bold;
+}
+.logp{
+  font: size 2px;
+  text-align: start;
+}
+.btnA{
+  text-align: start;
+  color:#e85b2e;
+
+}
+.Acc{
+  width: 432px;
+  padding-left: 50px;
+}
+.Acc1{
+  width: 432px;
+  padding-right: 50px;
+}
