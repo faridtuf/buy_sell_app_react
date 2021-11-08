@@ -37,7 +37,7 @@ export default class Navbar extends Component{
                         <div className="card footer-mt rounded-0">
                             <div className="card-body">
                                 <div className="row">
-                                    <div className="col-md-4">
+                                    <div className="col-md-4 col-lg-4">
                                         <div className="footer-links">
                                             <h6>SELL YOUR TECH</h6>
                                             <ul className="nav flex-column">
@@ -59,7 +59,7 @@ export default class Navbar extends Component{
                                             </ul>
                                         </div>
                                     </div>
-                                    <div className="col-md-4">
+                                    <div className="col-md-4 col-lg-4">
                                         <div className="footer-links">
                                             <h6>About</h6>
                                             <ul className="nav flex-column">
@@ -81,17 +81,17 @@ export default class Navbar extends Component{
                                             </ul>
                                         </div>
                                     </div>
-                                    <div className="col-md-4">
+                                    <div className="col-md-4 col-lg-4">
                                         <div className="footer-links">
                                             <h6>FOLLOW US</h6>
                                             <ul className="nav">
-                                                <li className="nav-item">
+                                                <li className="nav-item mb-2 mb-md-0">
                                                     <a className="nav-link footer-icons footer-twitter" href="#"><i className="fa fa-twitter"></i></a>
                                                 </li>
-                                                <li className="nav-item">
+                                                <li className="nav-item mb-2 mb-md-0">
                                                     <a className="nav-link footer-icons footer-facebook" href="#"><i className="fa fa-facebook-f"></i></a>
                                                 </li>
-                                                <li className="nav-item">
+                                                <li className="nav-item mb-2 mb-md-0">
                                                     <a className="nav-link footer-icons footer-youtube" href="#"><i className="fa fa-youtube"></i></a>
                                                 </li>
                                             </ul>
@@ -99,7 +99,7 @@ export default class Navbar extends Component{
                                     </div>
                                 </div>
                                 <div className="row mt-5">
-                                    <div className="col-md-4">
+                                    <div className="col-md-4 col-lg-4">
                                         <div className="footer-links">
                                             <h6>POPULAR SEARCHES</h6>
                                             <ul className="nav flex-column">
@@ -121,7 +121,7 @@ export default class Navbar extends Component{
                                             </ul>
                                         </div>
                                     </div>
-                                    <div className="col-md-4">
+                                    <div className="col-md-4 col-lg-4">
                                         <div className="footer-links">
                                             <ul className="nav flex-column">
                                                 <li className="nav-item">
@@ -142,7 +142,7 @@ export default class Navbar extends Component{
                                             </ul>
                                         </div>
                                     </div>
-                                    <div className="col-md-4">
+                                    <div className="col-md-4 col-lg-4">
                                         <div className="footer-links">
                                             <ul className="nav flex-column">
                                                 <li className="nav-item">

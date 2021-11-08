@@ -1630,6 +1630,10 @@ body {
   margin-right: 20rem;
 
 }
+.footer-mt{
+  margin-left: 0rem;
+  margin-right: 0rem;
+}
 
 .vertical-menu {
   width: 300px;
