@@ -6,28 +6,37 @@ export default class AccLogOut extends Component{
         return(
             <div>
                  <div class="vertical-menu">
-                <a href="/my/account" class="active">Account</a>
-                                <a href="/my/order"><i class="fas fa-th-large" />My Order</a><i />
-                                <a href="#"><i class="fas fa-user">Edit Account</i></a>
-                                <a href="/sell/password"><i class="fas fa-unlock-alt">Password</i></a>
-                                <a href="/sell/address"><i class="fas fa-address-card"></i>Address Books</a>
-                                <a href="/sell/acclogout"><i class="fas fa-sign-out-alt"></i>Logout</a>
-
+                                <a href="/my/account" className="active">Account</a>
+                                <a href="/my/order"><i className="glyphicon glyphicon-gift" />My Order</a><i />
+                                <a href="/my/amount"><i className="glyphicon glyphicon-user">Edit Account</i></a>
+                                <a href="/sell/password"><i className="glyphicon glyphicon-lock">Password</i></a>
+                                <a href="/sell/address"><i className="glyphicon glyphicon-book"></i>Address Books</a>
+                                <a href="/sell/acclogout"><i className="glyphicon glyphicon-off"></i>Logout</a>
                 </div>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
                 <div className="logout">
                 <h1>ACCOUNT LOGOUT</h1>
                 </div>
-                <div className="logp">
-                    <p>
+                <div className="logp center">
+                    <h4>
                     You have been logged off your account. It is now safe to leave the computer.
-                    </p>
-                    <p>
+                    </h4>
+                    <h4>
                     Your shopping cart has been saved, the items inside it will be restored whenever you log back into your account.
-                    </p>
+                    </h4>
                 </div>
-                <div className="col-lg-1">
-                    <button type="button">Continue</button>
+                <br/>
+                <div className="center">
+                <button type="submit" className="button-form font">Continue</button>
                 </div>
+                <br/>
+                <br/>
+                <br/>
+                
+
             </div>
             
         )

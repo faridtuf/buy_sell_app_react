@@ -7,12 +7,13 @@ export default class SellMyOrder extends Component{
         return(
             <div>
                 <div class="vertical-menu">
-                                <a href="/my/account" class="active">Account</a>
-                                <a href="/my/order"><i class="fas fa-th-large" />My Order</a><i />
-                                <a href="#"><i class="fas fa-user">Edit Account</i></a>
-                                <a href="/sell/password"><i class="fas fa-unlock-alt">Password</i></a>
-                                <a href="/sell/address"><i class="fas fa-address-card"></i>Address Books</a>
-                                <a href="/sell/acclogout"><i class="fas fa-sign-out-alt"></i>Logout</a>
+                <a href="/my/account" className="active">Account</a>
+                                <a href="/my/order"><i className="glyphicon glyphicon-gift" />My Order</a><i />
+                                <a href="/my/amount"><i className="glyphicon glyphicon-user">Edit Account</i></a>
+                                <a href="/sell/password"><i className="glyphicon glyphicon-lock">Password</i></a>
+                                <a href="/sell/address"><i className="glyphicon glyphicon-book"></i>Address Books</a>
+                                <a href="/sell/acclogout"><i className="glyphicon glyphicon-off"></i>Logout</a>
+
 
                             </div>
                   <main class="site-main">

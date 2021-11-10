@@ -20,7 +20,7 @@ import Login  from './components/login';
 import SignUp from './components/Create';
 import QuickBrandProduct from './components/QuickBrandProduct';
 import BuyProduct from './components/BuyProduct';
-import SellMyAccount from './components/SellMyAccount';
+// import SellMyAccount from './components/SellMyAccount';
 import SellMyOrder from './components/SellMyOrder';
 import Purchase from './components/Purchase';
 import log from './components/Log';
@@ -29,9 +29,9 @@ import Payment from './Payment';
 import order from './order';
 import Password from './components/Password';
 import AccLogOut from './components/AccLogOut';
-
-
-
+import Create from './components/Create';
+import Account1 from './components/Account1';
+import Acc2 from './components/Acc2';
 const MainNav = ({exact, path, component: Component}) => (
     <Route exact={exact} path={path} render={(props) => (
         <div>
@@ -52,37 +52,38 @@ function App() {
     return (
         <React.Fragment>
             <Switch>
-            <Route path="/my/create" component={SignUp}/>
-            <Route path="/my/log" component={log}/>
-            <Route path="/my/purchase" component={Purchase}/>
-            <Route path="/my/order" component={SellMyOrder}/>
+           
+            <MainNav path="/my/log" component={log}/>
+            <MainNav path="/my/purchase" component={Purchase}/>
+            <MainNav path="/my/order" component={SellMyOrder}/>
+            <MainNav exact path="/my/account" component={Acc2}/>  
+            <MainNav exact path="/details" component={Details}/>
+            <MainNav exact path="/my/acc1" component={Account1}/>
+            <MainNav exact path="/cart" component={Cart}/>
+            <MainNav exact path="/my/create" component={Create}/>
+            <MainNav exact path="/sell/acclogout" component={AccLogOut}/>
+            {/* <MainNav exact path="/my/acco" component={SellMyAccount}/> */}
+            <MainNav path="/sell/address" component={Address}/>
+            <MainNav path="/sell/password" component={Password}/>
+            <MainNav path="/sell/myorder" component={SellMyOrder}/>
+            <MainNav path="/sell/order" component={order}/>
+            <MainNav path="/sell/payment" component={Payment}/>  
+            <MainNav path="/sell" component={Sell}/>
                
-                <Route exact path="/details" component={Details}/>
-                {/*<Route exact path="/cart" component={Cart}/>*/}
-                <MainNav exact path="/cart" component={Cart}/>
-                <MainNav exact path="/sell/acclogout" component={AccLogOut}/>
-                <MainNav exact path="/my/account" component={SellMyAccount}/>
-                <MainNav path="/sell/address" component={Address}/>
-                <MainNav path="/sell/password" component={Password}/>
-                <MainNav path="/sell/myorder" component={SellMyOrder}/>
-                <MainNav path="/sell/order" component={order}/>
-                <MainNav path="/sell/payment" component={Payment}/>  
-                <MainNav path="/sell" component={Sell}/>
-               
-                <MainNav exact path="/brand" component={brand}/>
-                <MainNav  path="/product" component={Product}/>
-                <MainNav  path="/buy/product" component={BuyProduct}/>
-                <MainNav  path="/brands/product/" component={BrandProduct}/>
-                <MainNav  path="/quick/brand/product/" component={QuickBrandProduct}/>
-                <MainNav exact path="/login" component={Login}/>
-                <MainNav exact path="/signup" component={SignUp}/>
-                <MainNav exact path="/" component={ProductList}/>
-                <BuyNav exact path="/buy" component={Buy}/>
-                <MainNav path="/buy/address" component={Address}/>
-                <MainNav path="/buy/password" component={Password}/>
-                <MainNav path="/buy/order" component={order}/>
-                <MainNav path="/buy/payment" component={Payment}/> 
-                <MainNav  component={Default}/>
+            <MainNav exact path="/brand" component={brand}/>
+            <MainNav  path="/product" component={Product}/>
+            <MainNav  path="/buy/product" component={BuyProduct}/>
+            <MainNav  path="/brands/product/" component={BrandProduct}/>
+            <MainNav  path="/quick/brand/product/" component={QuickBrandProduct}/>
+            <MainNav exact path="/login" component={Login}/>
+            <MainNav exact path="/signup" component={SignUp}/>
+            <MainNav exact path="/" component={ProductList}/>
+            <BuyNav exact path="/buy" component={Buy}/>
+            <MainNav path="/buy/address" component={Address}/>
+            <MainNav path="/buy/password" component={Password}/>
+            <MainNav path="/buy/order" component={order}/>
+            <MainNav path="/buy/payment" component={Payment}/> 
+            <MainNav  component={Default}/>
                 
 
 

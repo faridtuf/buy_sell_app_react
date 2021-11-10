@@ -3,7 +3,7 @@ import axios from "axios";
 // import './App.css';
 
 
-export default class Login extends Component {
+export default class Create extends Component {
     render() {
         
         return (
@@ -11,8 +11,13 @@ export default class Login extends Component {
 
             <div className="container">
                 <div className="row">
-                    <h2 className="text-center">Create Account</h2>
+                    <div className="col-3">
 
+                    </div>
+                    <div className="col-6">
+                        <br/><br/>
+                    <h2 className="text-center">Create Account</h2>
+                    
                     <form class="form">
                         <div class="form-group">
                             <label for="fname">First Name:</label>
@@ -31,10 +36,18 @@ export default class Login extends Component {
                             <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd" />
                         </div>
 
+                        <div style={{'text-align': 'center'}}>
+                        <button type="submit" className="button-form">Create</button>
+
+                        </div>
 
 
-                        <button type="signin" className="btn btn-default hero-btn">CREATE</button>
                     </form>
+                    </div>
+                    <div className="col-3">
+
+                    </div>
+                   
                 </div>
             </div>
         )
