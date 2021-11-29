@@ -1,19 +1,44 @@
 import React, { Component } from "react";
 import axios from "axios";
-import "./App.css";
+import { FaBeer } from "@react-icons/all-files/fa/FaBeer";
+import './App.css';
 
-export default class Payment extends Component {
+
+
+export default class Address extends Component {
   render() {
+
     return (
-      <main>
-        <section class="payment">
-          <div class="conainer">
-            <div class="row">
+
+      <div>
+
+
+
+
+        <main class="site-main">
+          <section>
+            <div class="vertical-menu">
+              <a href="/my/account" className="active">Account</a>
+              <a href="/my/order"><i className="glyphicon glyphicon-gift" />My Order</a><i />
+              <a href="/my/amount"><i className="glyphicon glyphicon-user">Edit Account</i></a>
+              <a href="/sell/password"><i className="glyphicon glyphicon-lock">Password</i></a>
+              <a href="/sell/address"><i className="glyphicon glyphicon-book"></i>Address Books</a>
+              <a href="/sell/acclogout"><i class="fas fa-sign-out-alt"></i>Logout</a>
+
+
+            </div>
+          </section>
+        </main>
+        <br />
+
+        <section class="packaging">
+          <div class="container">
+            {/* <div class="row grid"> */}
               <div class="col-lg-4">
                 <h3 class="text-uppercase">
-                  <b>your personal details</b>
+                  <b>personal details</b>
                 </h3>
-                <div class="mb-2 row">
+                <div class="mb- row">
                   <label for="fname" class="col-sm-4 col-form-label">
                     *First Name
                   </label>
@@ -53,11 +78,11 @@ export default class Payment extends Component {
                     <input type="number" class="form-control" id="faxno" />
                   </div>
                 </div>
-                <br/>
+                <br />
                 <div className="center">
-                <button class="button-form2 font">
-                  Submit Personal Details
-                </button>
+                  <button class="button-form2 font">
+                    Submit Personal Details
+                  </button>
                 </div>
               </div>
 
@@ -101,30 +126,27 @@ export default class Payment extends Component {
                     <input type="number" class="form-control" id="sortcode" />
                   </div>
                 </div>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
+                <br />
+                <br />
+                <br />
+                <br />
                 <div className="center">
-                <button class="button-form2 font">
-                Submit Personal Details
-                </button>
+                  <button class="button-form2 font">
+                    Submit Personal Details
+                  </button>
                 </div>
               </div>
 
-              <div class="vertical-menu col-md-3">
-              <a href="/my/account" className="active">Account</a>
-                                <a href="/my/order"><i className="glyphicon glyphicon-gift" />My Order</a><i />
-                                <a href="/my/amount"><i className="glyphicon glyphicon-user">Edit Account</i></a>
-                                <a href="/sell/password"><i className="glyphicon glyphicon-lock">Password</i></a>
-                                <a href="/sell/address"><i className="glyphicon glyphicon-book"></i>Address Books</a>
-                                <a href="/sell/acclogout"><i class="glyphicon glyphicon-off"></i>Logout</a>
-
-              </div>
             </div>
-          </div>
+          {/* </div> */}
         </section>
-      </main>
-    );
+
+
+
+      </div>
+
+
+    )
+
   }
 }

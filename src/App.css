@@ -668,7 +668,7 @@ body {
   background-color: var(--main-bg);
 }
 .compare-mobile img{
-  width: 200px;
+  width: 80px;
   margin-bottom: 1rem;
   margin-top: 1rem;
 }
@@ -1817,7 +1817,27 @@ font-weight: bold;
 .password-m{
   padding-left: 300px;
   padding-bottom: 20px;
+}
+.footer-twitter:hover, .footer-youtube:hover, .footer-facebook:hover{
+  background-color: rgb(175, 172, 172) !important;
+}
 
+
+@media screen and (max-width: 768px) {
+  .row>* {
+    margin-bottom: 12px !important;
+    width: 50% !important;
+  }
+  
+  .footer-twitter, .footer-youtube, .footer-facebook{
+    height: 30px !important;
+    width: 30px !important;
+  }
+  .vertical-menu {
+    width: 100%;
+    float: right;
+    padding-bottom: 2em;
+  }
 }
 /* @media screen and (max-width: 600px){
   .row{
