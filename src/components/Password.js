@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
-import { FaBeer } from "@react-icons/all-files/fa/FaBeer";
+// import { FaBeer } from "@react-icons/all-files/fa/FaBeer";
 import '../App.css';
 
 
